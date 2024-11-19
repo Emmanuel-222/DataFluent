@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app{
+  font-family: "Inter", sans-serif;
+}
+
+.app-background {
+  min-height: 100vh; /* Ensures it covers the full height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #000;
+  background-image: url('./assets/shadow.png');
+  background-size: cover;
+  background-position: center;
+  /* background: radial-gradient(circle at center, rgba(0, 0, 0, 0.8), rgba(0, 10, 20, 1) 70%); */
+  color: white; /* Sets the default text color for the entire app */
+}
+
+.about-background{
+  /* background: linear-gradient(rgba(26, 26, 26, 0.698), rgba(26, 26, 26, 0.4)); */
+  background-image: url('./assets/About-us.png');
+}
+
+.btn{
+  padding: 1rem;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 2rem;
+  border: 1px solid #20E4D1;
+  cursor: pointer;
+}
+
+
+.shadow{
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+}
+
+.ellispe{
+  background: url('./assets/Ellipse1.png');
+}
+
+.cards-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.active{
+ color: #20E4D1;
+}
+
+.card{
+  flex: 1 1 calc(33.33% - 1rem); 
+  max-width: calc(33.33% - 1rem);
+}
+
+.bg1{
+  background: url('./assets/card/bg-card1.png');
+  background-repeat: no-repeat;
+  background-size: 10rem;
+  background-position-x: 85%;
+  background-position-y: 30%;
+}
+
+.bg2{
+  background: url('./assets/card/bg-card2.png');
+  background-repeat: no-repeat;
+  background-size: 10rem;
+  background-position-x: 85%;
+  background-position-y: 30%;
+}
+.bg3{
+  background: url('./assets/card/bg-card3.png');
+  background-repeat: no-repeat;
+  background-size: 10rem;
+  background-position-x: 85%;
+  background-position-y: 30%;
+}
+.bg4{
+  background: url('./assets/card/bg-card4.png');
+  background-repeat: no-repeat;
+  background-size: 10rem;
+  background-position-x: 85%;
+  background-position-y: 30%;
+}
+.bg5{
+  background: url('./assets/card/bg-card5.png');
+  background-repeat: no-repeat;
+  background-size: 10rem;
+  background-position-x: 85%;
+  background-position-y: 30%;
+}
+
+.bg6{
+  background: url('./assets/card/bg-card6.png');
+  background-repeat: no-repeat;
+  background-size: 10rem;
+  background-position-x: 85%;
+  background-position-y: 30%;
+}
+
+.left-quote-bg{
+  background: url('./assets/card/left-quote.png');
+  background-repeat: no-repeat;
+  background-size: 8rem;
+  background-position-x: 10%;
+  background-position-y: 50%;
+}
+.left-bg{
+  background: url('./assets/left.png');
+  background-repeat: no-repeat;
+}
+.right-bg{
+  background: url('./assets/right.png');
+  background-repeat: no-repeat;
+}
+
+
+@media (max-width: 768px) {
+  .left-quote-bg{
+    background-size: 6rem;
+    background-position-x: 10%;
+    background-position-y: 10%;
+  }
+  .cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+    flex: 1 1 100%; 
+    max-width: 100%;
+  }
+  .btn{
+    width: 100%;
+  }
+}
