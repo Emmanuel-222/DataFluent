@@ -7,6 +7,16 @@ import { CiLinkedin, CiLocationOn, CiMail } from "react-icons/ci";
 import { LuPhone } from "react-icons/lu";
 import { GoArrowUpRight } from "react-icons/go";
 
+import graduate  from "../../src/assets/graduate.png";
+import iconOne from "../../src/assets/card/icon-card1.png";
+import iconTwo from "../../src/assets/card/icon-card2.png";
+import iconThree from "../../src/assets/card/icon-card3.png";
+import iconFour from "../../src/assets/card/icon-card4.png";
+import iconFive from "../../src/assets/card/icon-card5.png";
+import iconSix from "../../src/assets/card/icon-card6.png";
+import profileOne from "../../src/assets/card/image1.png";
+import profileTwo from "../../src/assets/card/image2.png";
+import graduationCap from "../../src/assets/grad.png";
 const Home = () => {
   return (
     <div className="container text-[#FAFAFA] h-screen w-screen">
@@ -316,7 +326,7 @@ const Home = () => {
 
           <div className="flex justify-center items-center flex-1 relative">
             <img
-              src="../assets/graduate.png"
+              src={graduate}
               alt=""
               className="w-full object-cover absolute"
             />
@@ -336,7 +346,7 @@ const Home = () => {
           <div className="card bg1 flex flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
             <img
               className="h-[60px] w-[60px]"
-              src="../../src/assets/card/icon-card1.png"
+              src={iconOne}
               alt="icon"
             />
             <div className="card-text flex flex-col self-stretch items-start gap-4">
@@ -350,7 +360,7 @@ const Home = () => {
           <div className="card bg2 flex flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
             <img
               className="h-[60px] w-[60px]"
-              src="../../src/assets/card/icon-card2.png"
+              src={iconTwo}
               alt="icon"
             />
             <div className="card-text flex flex-col self-stretch items-start gap-4">
@@ -364,7 +374,7 @@ const Home = () => {
           <div className="card bg3 flex flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
             <img
               className="h-[60px] w-[60px]"
-              src="../../src/assets/card/icon-card3.png"
+              src={iconThree}
               alt="icon"
             />
             <div className="card-text flex flex-col self-stretch items-start gap-4">
@@ -380,7 +390,7 @@ const Home = () => {
           <div className="card bg4 flex flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
             <img
               className="h-[60px] w-[60px]"
-              src="../../src/assets/card/icon-card4.png"
+              src={iconFour}
               alt="icon"
             />
             <div className="card-text flex flex-col self-stretch items-start gap-4">
@@ -396,7 +406,7 @@ const Home = () => {
           <div className="card bg5 flex flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
             <img
               className="h-[60px] w-[60px]"
-              src="../../src/assets/card/icon-card5.png"
+              src={iconFive}
               alt="icon"
             />
             <div className="card-text flex flex-col self-stretch items-start gap-4">
@@ -413,7 +423,7 @@ const Home = () => {
           <div className="card bg6 flex flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
             <img
               className="h-[60px] w-[60px]"
-              src="../../src/assets/card/icon-card6.png"
+              src={iconSix}
               alt="icon"
             />
             <div className="card-text flex flex-col self-stretch items-start gap-4">
@@ -475,7 +485,7 @@ const Home = () => {
             <div className="flex justify-start md:justify-center items-center gap-4 mt-10 w-full md:w-[90%]">
               <img
                 className="h-16 w-16"
-                src="../../src/assets/card/image1.png"
+                src={profileOne}
                 alt="profile-img"
               />
               <div className="name">
@@ -493,7 +503,7 @@ const Home = () => {
             <div className="flex justify-start md:justify-center items-center gap-4 mt-10 w-full md:w-[90%]">
               <img
                 className="h-16 w-16"
-                src="../../src/assets/card/image2.png"
+                src={profileTwo}
                 alt="profile-img"
               />
               <div className="name">
@@ -573,7 +583,7 @@ const Home = () => {
             </p>
           </div>
           <div>
-            <img src="../../src/assets/grad.png" alt="graduation cap" />
+            <img src={graduationCap} alt="graduation cap" />
           </div>
         </div>
       </footer>
