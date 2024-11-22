@@ -316,7 +316,7 @@ const Home = () => {
 
           <div className="flex justify-center items-center flex-1 relative">
             <img
-              src="../../src/assets/graduate.png"
+              src="../assets/graduate.png"
               alt=""
               className="w-full object-cover absolute"
             />
