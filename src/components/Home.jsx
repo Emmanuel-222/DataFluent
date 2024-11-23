@@ -21,7 +21,7 @@ const Home = () => {
   return (
     <div className="container text-[#FAFAFA] h-screen w-screen">
       <section className="flex items-center justify-center flex-col app-background w-screen">
-        <div className="top flex items-center md:justify-center flex-col mt-10 md:mt-0 mb-32 h-screen w-full">
+        <div className="top flex items-center md:justify-center flex-col mt-10 md:mt-0 mb-32 h-screen w-full mx-2">
           <div className="flex items-center gap-4">
             <PiHandWavingThin className="text-[#20E4D1]" />
             <p className="text-base md:text-[20px] font-[400]">
@@ -283,7 +283,7 @@ const Home = () => {
         </div>
       </section>
       <section className="about-background flex items-center py-64 justify-center flex-col bg-black w-screen">
-        <div className="shadow flex items-center justify-center flex-col border-[1px] border-solid border-[#2F2F2F99] px-2 md:px-16 py-14 bg-[#1A1A1A66] rounded-[32px] blur-[0.5px]">
+        <div className="shadow flex items-center justify-center flex-col border-[1px] border-solid border-[#2F2F2F99] px-2 md:px-16 py-14 bg-[#1A1A1A66] rounded-[32px] blur-[0.5px] mx-2">
           <div className="contents text-[#FAFAFA]">
             <h1 className="text-[#20E4D1] text-base md:text-[20px] text-center font-[500]">
               About Us
@@ -308,8 +308,8 @@ const Home = () => {
         <h1 className="text-[24px] md:text-4xl font-[600] max-w-xl text-center mb-10">
           Advance Your Career with DataFluent Academy
         </h1>
-        <div className="flex justify-center flex-wrap items-stretch gap-32 md:gap-2 md:px-20 ellispe">
-          <div className="w-full md:w-[50%] md:h-[50%] border-[1px] border-solid border-[#2F2F2F99] px-4 md:px-16 py-10 bg-[#1A1A1A] rounded-[32px] blur-[0.5px]">
+        <div className="graduate flex justify-center flex-wrap items-stretch gap-32 md:gap-2 md:px-20 ellispe mx-2">
+          <div className="w-full lg:w-[50%] lg:h-[50%] border-[1px] border-solid border-[#2F2F2F99] px-4 md:px-16 py-10 bg-[#1A1A1A] rounded-[32px] blur-[0.5px]">
             <p>
               At DataFluent Academy, we speak the language of the future. Dive
               into transformative courses that empower you to master the skills
@@ -343,7 +343,7 @@ const Home = () => {
           </h1>
         </div>
         <div className="flex gap-8 items-stretch justify-center cards-container">
-          <div className="card bg1 flex flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
+          <div className="card bg1 flex-1 flex flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
             <img
               className="h-[60px] w-[60px]"
               src={iconOne}
@@ -357,7 +357,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="card bg2 flex flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
+          <div className="card bg2 flex flex-1 flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
             <img
               className="h-[60px] w-[60px]"
               src={iconTwo}
@@ -371,7 +371,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="card bg3 flex flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
+          <div className="card bg3 flex flex-1 flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
             <img
               className="h-[60px] w-[60px]"
               src={iconThree}
@@ -387,7 +387,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="card bg4 flex flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
+          <div className="card bg4 flex flex-1 flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
             <img
               className="h-[60px] w-[60px]"
               src={iconFour}
@@ -403,7 +403,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="card bg5 flex flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
+          <div className="card bg5 flex flex-1 flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
             <img
               className="h-[60px] w-[60px]"
               src={iconFive}
@@ -420,7 +420,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="card bg6 flex flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
+          <div className="card bg6 flex flex-1 flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
             <img
               className="h-[60px] w-[60px]"
               src={iconSix}
@@ -447,7 +447,7 @@ const Home = () => {
             Our Impact in Numbers
           </h1>
         </div>
-        <div className="bottom flex justify-center items-center md:items-stretch md:p-8 text-[#FAFAFA] mb-14 gap-8 md:gap-0">
+        <div className="bottom flex justify-center items-center md:items-stretch md:p-8 text-[#FAFAFA] mb-14 gap-8 md:gap-0 mx-4">
           <div className="text-center card border-solid border-[#a3a3a3] border-r-[0.5px] px-4 md:px-20">
             <h1 className="font-[600] text-[48px] md:text-[70px]">80+</h1>
             <p className="text-[#B9B9B9] text-[10px] md:text-xs font-[500]">
@@ -516,7 +516,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="flex items-center py-14 md:px-32 justify-between gap-8 flex-col bg-black w-screen">
+      <section className="flex items-center py-14 px-4 md:px-32 justify-between gap-8 flex-col bg-black w-screen">
         <div className="bg-[#1A1A1A] left-bg rounded-[32px] w-full p-16 md:p-28 flex justify-center items-center flex-col border-[#2F2F2F] border-solid border-[1px]">
           <h1 className="font-[600] text-[32px] text-center md:text-5xl mb-12">
             Take the Next Step with DataFluent
@@ -526,7 +526,7 @@ const Home = () => {
           </button>
         </div>
       </section>
-      <footer className="bg-black w-screen font-montserrat flex flex-col md:flex-row justify-around items-start md:items-stretch pl-4 md:pl-0 pb-10 pt-20 md:pt-40 gap-10 md:gap-0">
+      <footer className="bg-black w-screen font-montserrat flex flex-col lg:flex-row justify-around items-start lg:items-stretch pl-4 lg:pl-0 pb-10 pt-20 lg:pt-40 gap-10 lg:gap-0">
         <div className="flex flex-col justify-center text-[#FAFAFA] items-center gap-10">
           <div className="top flex flex-col gap-4">
             <span className="flex items-center gap-4">
@@ -572,9 +572,9 @@ const Home = () => {
             </li>
           </ul>
         </div>
-        <div className="flex justify-center items-center gap-4 border-solid border-[1px] border-[#2E2E2E] rounded-[32px] px-6 py-4 md:py-0 md:mx-0">
-          <div className="md:max-w-[24rem] flex flex-col gap-4 items-start">
-            <h1 className="text-[#B9B9B9] font-[600] text-[18px] md:text-[24px] md:text-wrap">
+        <div className="flex justify-center items-center gap-4 border-solid border-[1px] border-[#2E2E2E] rounded-[32px] px-6 py-4 lg:py-0 mr-4 lg:mr-0">
+          <div className="lg:max-w-[24rem] flex flex-col gap-4 items-start">
+            <h1 className="text-[#B9B9B9] font-[600] text-[18px] lg:text-[24px] lg:text-wrap">
               Invest in Your Future with DataFluent Academy
             </h1>
             <p className="text-[#20E4D1] text-sm flex justify-center items-center cursor-pointer">
@@ -587,7 +587,7 @@ const Home = () => {
           </div>
         </div>
       </footer>
-      <span className="flex items-center py-14 md:px-32 justify-between gap-8 flex-col bg-black w-screen text-[14px] md:text-base">&#169; 2024 Data Fluent Enterprise. All Rights Reserved</span>
+      <span className="flex items-center py-14 lg:px-32 justify-between gap-8 flex-col bg-black w-screen text-[14px] md:text-base">&#169; 2024 Data Fluent Enterprise. All Rights Reserved</span>
     </div>
   );
 };

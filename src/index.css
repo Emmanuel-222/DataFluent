@@ -44,12 +44,16 @@
   background: url('./assets/Ellipse1.png');
 }
 
+.flex-wraps{
+  display: flex;
+  flex-wrap: wrap;
+}
 .cards-container{
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 1rem;
   gap: 1rem;
 }
 
@@ -130,6 +134,12 @@
     background-position-x: 10%;
     background-position-y: 10%;
   }
+  .btn{
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
   .cards-container{
     display: flex;
     justify-content: center;
@@ -139,7 +149,28 @@
     flex: 1 1 100%; 
     max-width: 100%;
   }
-  .btn{
+  }
+
+  @media (max-width: 1110px) {
+    .full-width{
+      width: 100%;
+    }
+  }
+@media (max-width: 1300px) {
+  .graduate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .graduate div{
     width: 100%;
   }
+
+  .graduate div img{
+    position: relative;
+  }
 }
+
+

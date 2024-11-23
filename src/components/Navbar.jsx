@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="navbar bg-black text-white px-8 py-[24px] w-full">
       {/* Desktop Navigation */}
-      <div className="hidden md:flex justify-between items-center w-full">
+      <div className="hidden lg:flex justify-between items-center w-full">
         <div className="logo py-6 px-16 rounded-3xl bg-[#20E4D1] bg-gradient-to-t from-[#43E8D8] to-[#1A1A1A]"></div>
         <ul
           className="flex justify-between gap-8 py-4 px-8
@@ -40,7 +40,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      <div className="flex justify-between items-center md:hidden w-full">
+      <div className="flex justify-between items-center lg:hidden w-full">
         {/* Logo */}
         <div className="logo py-6 px-16 rounded-3xl bg-[#20E4D1] bg-gradient-to-t from-[#43E8D8] to-[#1A1A1A]"></div>
 
