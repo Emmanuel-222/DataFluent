@@ -1,6 +1,9 @@
 export { default as Navbar } from "./Navbar";
-export { default as Home } from "./Home";
-export { default as About } from "./About";
-export { default as Contact } from "./Contact";
-export { default as Academy } from "./Academy";
-export { default as Services } from "./Services";
+export { default as Home } from "../Pages/Home";
+export { default as About } from "../Pages/About";
+export { default as Contact } from "../Pages/Contact";
+export { default as Academy } from "../Pages/Academy";
+export { default as Services } from "../Pages/Services";
+export { default as Footer } from "./Footer";
+export {default as Card } from "./Card";
+export { default as Carousel} from "./Carousel";

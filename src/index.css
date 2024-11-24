@@ -9,7 +9,7 @@
 }
 
 .app-background {
-  min-height: 100vh; /* Ensures it covers the full height */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,12 +17,16 @@
   background-image: url('./assets/shadow.png');
   background-size: cover;
   background-position: center;
-  /* background: radial-gradient(circle at center, rgba(0, 0, 0, 0.8), rgba(0, 10, 20, 1) 70%); */
-  color: white; /* Sets the default text color for the entire app */
+  color: white;
+}
+
+.about-card{
+  background-position: center;
+  background-size: cover;
+  background-image: url('./assets/about-us/about.png');
 }
 
 .about-background{
-  /* background: linear-gradient(rgba(26, 26, 26, 0.698), rgba(26, 26, 26, 0.4)); */
   background-image: url('./assets/About-us.png');
 }
 
@@ -128,7 +132,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .left-quote-bg{
     background-size: 6rem;
     background-position-x: 10%;
