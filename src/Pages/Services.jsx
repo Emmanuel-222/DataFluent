@@ -1,9 +1,8 @@
 import { MdOutlineMiscellaneousServices } from "react-icons/md";
 import { GoArrowUpRight } from "react-icons/go";
-import { IoArrowBack,  IoArrowForward } from "react-icons/io5";
+import { IoArrowBack, IoArrowForward } from "react-icons/io5";
 
-import { Footer } from "../components";
-
+import { Footer, Testimonial, Card } from "../components";
 
 import ServiceCard from "../components/ServiceCard";
 import Carousel from "../components/Carousel";
@@ -16,14 +15,14 @@ const Services = () => {
   return (
     <div className="container text-[#FAFAFA] h-screen w-screen">
       <section className="flex items-center justify-center flex-col app-background w-screen">
-        <div className="top flex items-center md:justify-center flex-col mt-10 md:mt-0 mb-14 h-screen w-full mx-2">
+        <div className="top flex items-center md:justify-center flex-col mt-10 md:mt-0 md:mb-14 h-screen w-full mx-2">
           <div className="flex items-center gap-4">
-            <MdOutlineMiscellaneousServices className="text-[#20E4D1] rotate-90" />
+            <MdOutlineMiscellaneousServices className="text-[#20E4D1]" />
             <p className="text-base md:text-[20px] font-[400]">
               DataFluent Services
             </p>
           </div>
-          <div className="flex items-center flex-col gap-4 mb-32 max-w-5xl mx-auto px-4">
+          <div className="flex items-center flex-col gap-4 md:mb-32 max-w-5xl mx-auto px-4">
             <h1 className="font-[700] text-[2rem] md:text-[4rem] text-center">
               Empowering Business with Tailored Digital Solutions
             </h1>
@@ -33,9 +32,8 @@ const Services = () => {
             </h3>
           </div>
         </div>
-        {/* <Carousel /> */}
       </section>
-      <section className="flex items-center py-4 justify-center flex-col bg-black w-screen">
+      <section className="flex items-center md:py-4 justify-center flex-col bg-black w-screen">
         <div className="shadow flex items-center justify-center flex-col border-[1px] border-solid border-[#2F2F2F99] px-2 md:px-16 py-14 bg-[#1A1A1A66] rounded-[32px] blur-[0.5px] mx-2">
           <div className="contents text-[#FAFAFA]">
             <h1 className="text-[24px] md:text-[40px] font-[600] my-4">
@@ -69,15 +67,31 @@ const Services = () => {
             Our Recent Projects
           </h1>
         </div>
-        <div className="flex flex-col gap-8 items-stretch justify-end mb-32">
-          <div className="top flex cards-container">
+        <div className="flex flex-col md:gap-8 items-stretch justify-end mb-32">
+          <div className="top flex flex-row cards-container">
             <img className="h-72 w-72" src={imageOne} alt="" />
             <img className="h-72 w-72" src={imageTwo} alt="" />
             <img className="h-72 w-72" src={imageThree} alt="" />
           </div>
-          <div className="bottom flex justify-between items-center">
-            <button className="btn flex items-center text-[#43E8D8] font-[500] ml-64 gap-2 text-center">View all projects<GoArrowUpRight /></button>
+
+          {/* Mobile screen */}
+          <div className="bottom flex flex-col md:hidden px-4 justify-between items-end gap-4">
             <div className="flex items-center gap-4 text-[#20E4D1] text-2xl">
+              <IoArrowBack />
+              <IoArrowForward />
+            </div>
+            <button className="btn flex items-center justify-center text-[#43E8D8] w-full md:w-60 font-[500] md:ml-64 gap-2 text-center">
+              View all projects
+              <GoArrowUpRight />
+            </button>
+          </div>
+          {/* Bigger Screen */}
+          <div className="bottom hidden md:flex md:flex-row px-4 justify-between items-center gap-4">
+            <button className="btn flex items-center justify-center text-[#43E8D8] w-full md:w-60 font-[500] md:ml-64 gap-2 text-center">
+              View all projects
+              <GoArrowUpRight />
+            </button>
+            <div className="md:flex items-center gap-4 text-[#20E4D1] text-2xl">
               <IoArrowBack />
               <IoArrowForward />
             </div>
@@ -85,6 +99,16 @@ const Services = () => {
         </div>
         <Carousel />
       </section>
+      <Testimonial />
+      <Card
+        title={"Ready to Transform Your Business?"}
+        showButton={true}
+        buttonText={"Request a Consultation"}
+        showParagraph={true}
+        paragraphText={
+          "Get in touch to discuss how we can help you achieve your digital goals"
+        }
+      />
       <Footer />
     </div>
   );
