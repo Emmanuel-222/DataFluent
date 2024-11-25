@@ -32,8 +32,8 @@ Card.propTypes = {
   title: PropType.string.isRequired,
   buttonText: PropType.string.isRequired,
   showButton: PropType.bool.isRequired,
-  paragraphText: PropType.string.isRequired,
-  showParagraph: PropType.bool.isRequired,
+  paragraphText: PropType.string,
+  showParagraph: PropType.bool,
 }
 
 export default Card;

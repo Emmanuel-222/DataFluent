@@ -1,11 +1,13 @@
-import {Footer, Card} from "../components";
+import { Footer, Card } from "../components";
 
 const About = () => {
   return (
     <div className="h-screen w-full text-[#FAFAFA] ">
-      <section className="about-background flex items-center pt-40 justify-center flex-col bg-black w-screen">
+      <section className="about-background flex items-center pt-10 md:pt-40 justify-center flex-col bg-black w-screen">
         <div className="title text-center mb-32 px-4 md:px-0">
-          <h1 className="text-[20px] md:text-[64px] font-[600]">About Us</h1>
+          <h1 className="font-[700] text-[2rem] md:text-[4rem] text-center">
+            About Us
+          </h1>
           <p className="text-[#BDBDBD] text-base md:text-[20px] font-[400]">
             Driving innovation in digital solutions and professional training
           </p>
@@ -39,7 +41,11 @@ const About = () => {
             student at a time.
           </p>
         </div>
-        <Card />
+        <Card
+          title={"Take the Next Step with DataFluent"}
+          showButton={true}
+          buttonText={"Request a Consultation"}
+        />
         <Footer />
       </section>
     </div>

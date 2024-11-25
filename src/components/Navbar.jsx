@@ -29,10 +29,10 @@ const Navbar = () => {
             <NavLink to="/services">Services</NavLink>
           </li>
           <li>
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink to="/academy">Academy</NavLink>
           </li>
           <li>
-            <NavLink to="/academy">Academy</NavLink>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
         <button className="btn bg-[#20E4D1] text-black">
@@ -52,7 +52,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       <div
-        className={`bg-black text-white px-8 py-[24px] flex flex-col justify-between items-center w-full ${
+        className={`bg-black text-white px-8 py-[24px] flex flex-col lg:hidden justify-between items-center w-full ${
           nav
             ? "absolute top-20 left-0 bg-[#1A1A1A] flex flex-col justify-center items-center w-full h-screen"
             : "hidden"
@@ -76,12 +76,12 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink to="/contact" onClick={handleClick}>
-              Contact
+              Academy
             </NavLink>
           </li>
           <li>
             <NavLink to="/academy" onClick={handleClick}>
-              Academy
+              Contact
             </NavLink>
           </li>
           <button className="btn bg-[#20E4D1] text-sm md:text-base text-black mt-10">

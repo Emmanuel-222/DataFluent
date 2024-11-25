@@ -7,15 +7,33 @@ import { Footer, Testimonial, Card } from "../components";
 import ServiceCard from "../components/ServiceCard";
 import Carousel from "../components/Carousel";
 
+import profileOne from "../../src/assets/card/image1.png";
+import profileTwo from "../../src/assets/card/image2.png";
 import imageOne from "../../src/assets/service/image-one.png";
 import imageTwo from "../../src/assets/service/image-two.png";
 import imageThree from "../../src/assets/service/image-three.png";
 
 const Services = () => {
+  const testimonail = [
+    {
+      name: "Seun Lawrence",
+      testimony:
+        "DataFluent Enterprise transformed our digital presence. Their team brought our vision to life with sleek, intuitive website that has driven customer engagement to new heights!",
+      profile: profileOne ,
+      company: "Darren Hub",
+    },
+    {
+      name: "David John",
+      testimony:
+        "Thanks to DataFluent Academy, our team gained essential skills in data analysis. The training was practical and effective, equipping us to handle real-world challenges confidently.",
+      profile: profileTwo,
+      company: "Kravit Consult",
+    },
+  ];
   return (
     <div className="container text-[#FAFAFA] h-screen w-screen">
       <section className="flex items-center justify-center flex-col app-background w-screen">
-        <div className="top flex items-center md:justify-center flex-col mt-10 md:mt-0 md:mb-14 h-screen w-full mx-2">
+        <div className="top flex items-center justify-start flex-col mt-10 md:mt-24 md:mb-14 h-screen w-full mx-2">
           <div className="flex items-center gap-4">
             <MdOutlineMiscellaneousServices className="text-[#20E4D1]" />
             <p className="text-base md:text-[20px] font-[400]">
@@ -99,7 +117,7 @@ const Services = () => {
         </div>
         <Carousel />
       </section>
-      <Testimonial />
+      <Testimonial testimonials={testimonail} />
       <Card
         title={"Ready to Transform Your Business?"}
         showButton={true}
