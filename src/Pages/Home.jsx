@@ -2,9 +2,28 @@ import { Link } from "react-router-dom";
 import { PiHandWavingThin } from "react-icons/pi";
 import { Footer, Card, Carousel, Testimonial } from "../components";
 
+import profileOne from "../../src/assets/card/image1.png";
+import profileTwo from "../../src/assets/card/image2.png";
 import graduate from "../../src/assets/graduate.png";
 import ServiceCard from "../components/ServiceCard";
 const Home = () => {
+  const testimonials = [
+    {
+      name: "Seun Lawrence",
+      testimony:
+        "DataFluent Enterprise transformed our digital presence. Their team brought our vision to life with sleek, intuitive website that has driven customer engagement to new heights!",
+      profile: profileOne ,
+      company: "Darren Hub",
+    },
+    {
+      name: "David John",
+      testimony:
+        "Thanks to DataFluent Academy, our team gained essential skills in data analysis. The training was practical and effective, equipping us to handle real-world challenges confidently.",
+      profile: profileTwo ,
+      company: "Kravit Consult",
+    },
+  ];
+
   return (
     <div className="container text-[#FAFAFA] h-screen w-screen">
       <section className="flex items-center justify-center flex-col app-background w-screen">
@@ -126,7 +145,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Testimonial />
+      <Testimonial testimonials={testimonials} />
       <Card
         title={"Take the Next Step with DataFluent"}
         showButton={true}
