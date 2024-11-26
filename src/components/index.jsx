@@ -10,3 +10,6 @@ export { default as Carousel} from "./Carousel";
 export { default as Testimonial } from "./Testimonial";
 export { default as AcademyCard } from "./AcademyCard";
 export { default as TestimonialCard } from "./TestimonialCard";
+export { default as CourseCard } from "./CourseCard";
+export { default as CourseCardInfo } from "./CourseCardInfo";
+export { default as Impact } from "./Impact";

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { PiHandWavingThin } from "react-icons/pi";
-import { Footer, Card, Carousel, Testimonial } from "../components";
+import { Footer, Card, Carousel, Testimonial, Impact } from "../components";
 
 import profileOne from "../../src/assets/card/image1.png";
 import profileTwo from "../../src/assets/card/image2.png";
@@ -12,14 +12,14 @@ const Home = () => {
       name: "Seun Lawrence",
       testimony:
         "DataFluent Enterprise transformed our digital presence. Their team brought our vision to life with sleek, intuitive website that has driven customer engagement to new heights!",
-      profile: profileOne ,
+      profile: profileOne,
       company: "Darren Hub",
     },
     {
       name: "David John",
       testimony:
         "Thanks to DataFluent Academy, our team gained essential skills in data analysis. The training was practical and effective, equipping us to handle real-world challenges confidently.",
-      profile: profileTwo ,
+      profile: profileTwo,
       company: "Kravit Consult",
     },
   ];
@@ -118,33 +118,14 @@ const Home = () => {
         </div>
         <ServiceCard />
       </section>
-      <section className="flex items-center py-14 md:px-32 justify-between gap-8 flex-col bg-black w-screen">
-        <div className="top">
-          <h1 className="text-center font-[600] text-[20px] md:text-[32px] text-[#A2A2A2]">
-            Our Impact in Numbers
-          </h1>
-        </div>
-        <div className="bottom flex justify-center items-center md:items-stretch md:p-8 text-[#FAFAFA] mb-14 gap-8 md:gap-0 mx-4">
-          <div className="text-center card border-solid border-[#a3a3a3] border-r-[0.5px] px-4 md:px-20">
-            <h1 className="font-[600] text-[48px] md:text-[70px]">80+</h1>
-            <p className="text-[#B9B9B9] text-[10px] md:text-xs font-[500]">
-              Projects Delivered
-            </p>
-          </div>
-          <div className="text-center card border-none md:px-20">
-            <h1 className="font-[600] text-[48px] md:text-[70px]">90+</h1>
-            <p className="text-[#B9B9B9] text-[10px] md:text-xs font-[500]">
-              Students Trained
-            </p>
-          </div>
-          <div className="text-center card border-solid border-[#a3a3a3] border-l-[0.5px] px-4 md:px-20">
-            <h1 className="font-[600] text-[48px] md:text-[70px]">4.8</h1>
-            <p className="text-[#B9B9B9] text-[10px] md:text-xs font-[500]">
-              Review Rate
-            </p>
-          </div>
-        </div>
-      </section>
+      <Impact
+        impactOne="80+"
+        impactTwo="90+"
+        impactThree="4.8"
+        AreaOne="Projects Delivered"
+        AreaTwo="Students Trained"
+        AreaThree="Review Rate"
+      />
       <Testimonial testimonials={testimonials} />
       <Card
         title={"Take the Next Step with DataFluent"}

@@ -1,5 +1,7 @@
 import { LuGraduationCap } from "react-icons/lu";
-import { AcademyCard, Testimonial, Footer } from "../components";
+import { GoArrowUpRight } from "react-icons/go";
+
+import { AcademyCard, CourseCard, Testimonial, Footer, CourseCardInfo, Impact } from "../components";
 
 import imageOne from "../../src/assets/academy/image-one.png";
 import imageTwo from "../../src/assets/academy/image-two.png";
@@ -9,13 +11,15 @@ import imageFive from "../../src/assets/academy/image-five.png";
 import profileOne from "../../src/assets/academy/profile-one.png";
 import profileTwo from "../../src/assets/academy/profile-two.png";
 
+
+
 const Academy = () => {
   const testimonail = [
     {
       name: "Joan Olajuwon",
       testimony:
         "DataFluent Academy gave me the skills and confidence to shift into a tech career. The hands-on projects were incredibly practical, and the instructors were supportive every step of the way!",
-      profile: profileOne ,
+      profile: profileOne,
       company: "Data Science Grad.",
     },
     {
@@ -61,7 +65,13 @@ const Academy = () => {
             Why DataFluent Academy?
           </h1>
           <div className="flex justify-center items-stretch gap-4 flex-wrap">
-            <p className="lg:max-w-[20rem] mt-4 mx-8 md:mt-20 mb-8 md:mb-0">DataFluent Academy is dedicated to preparing individuals for high-demand careers in technology. Our programs are designed to provide practical, hands-on learning guided by industry experts, ensuring that every student gains the skills and confidence to excel in a data-driven world</p>
+            <p className="lg:max-w-[20rem] mt-4 mx-8 md:mt-20 mb-8 md:mb-0">
+              DataFluent Academy is dedicated to preparing individuals for
+              high-demand careers in technology. Our programs are designed to
+              provide practical, hands-on learning guided by industry experts,
+              ensuring that every student gains the skills and confidence to
+              excel in a data-driven world
+            </p>
             <AcademyCard
               title="Industry-Aligned Curriculum"
               img={imageOne}
@@ -90,6 +100,36 @@ const Academy = () => {
           </div>
         </div>
       </section>
+      <section className="flex items-center justify-center flex-col w-screen bg-black">
+        <h1 className="font-[600] text-[28px] md:text-[40px] text-center text-white">
+          Explore Our Courses
+        </h1>
+        <div className="flex flex-wrap justify-center items-stretch gap-14 mx-4 md:mx-24 my-8">
+          {
+          //Destructed information from the CourseCardInfo to make the code neater
+            CourseCardInfo.map(({ courseTitle, description, img}) => (
+              <CourseCard key={courseTitle} courseTitle={courseTitle} description={description} img={img} />
+            ))
+          }
+          <div className="flex flex-1 flex-col rounded-[32px] justify-start items-start px-1 pt-1 pb-8 gap-4">
+            <h1 className="font-[600] text-[72px] text-[#E0E0E0]">
+              Ready to Start Your Journey?
+            </h1>
+            <button className="btn w-48 text-[#43E8D8] text-[18px] font-[500] gap-2 text-sm flex justify-center items-center">
+              Enroll
+              <GoArrowUpRight />
+            </button>
+          </div>
+        </div>
+      </section>
+      <Impact
+        impactOne="90+"
+        impactTwo="80%"
+        impactThree="95%"
+        AreaOne="Graduates & Counting"
+        AreaTwo="Job Placement"
+        AreaThree="Course Satisfaction Rate"
+      />
       <Testimonial testimonials={testimonail} />
       <Footer />
     </div>

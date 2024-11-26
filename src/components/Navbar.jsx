@@ -75,12 +75,12 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" onClick={handleClick}>
+            <NavLink to="/academy" onClick={handleClick}>
               Academy
             </NavLink>
           </li>
           <li>
-            <NavLink to="/academy" onClick={handleClick}>
+            <NavLink to="/contact" onClick={handleClick}>
               Contact
             </NavLink>
           </li>
