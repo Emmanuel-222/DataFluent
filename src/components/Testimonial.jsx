@@ -2,7 +2,7 @@ import propType from "prop-types";
  
 import { TestimonialCard } from "../components";
 
-const Testimonial = ({ testimonials }) => {
+const Testimonial = ({ testimonials, name }) => {
   return (
     <section className="flex items-center py-14 md:px-32 justify-between gap-8 flex-col bg-black w-screen">
       <div className="top text-center">
@@ -10,7 +10,7 @@ const Testimonial = ({ testimonials }) => {
           Testimonials
         </h1>
         <h1 className="font-[600] text-[24px] md:text-[40px] text-[#FAFAFA]">
-          What clients say
+          {name}
         </h1>
       </div>
       <div className="bottom cards-container">
@@ -30,6 +30,7 @@ const Testimonial = ({ testimonials }) => {
 
 Testimonial.propTypes = {
   testimonials: propType.array.isRequired,
+  name: propType.string.isRequired,
 };
 
 export default Testimonial;

@@ -60,7 +60,7 @@ const Academy = () => {
         </div>
       </section>
       <section className="flex items-center justify-center flex-col academy-background w-screen">
-        <div className="border-[#2F2F2F99] flex justify-center items-center flex-col md:gap-20 border-[1px] border-solid py-20 rounded-[32px] px-4 md:px-10 mx-2 md:mx-16 mb-32">
+        <div className="border-[#2F2F2F99] flex justify-center items-center flex-col md:gap-20 border-[1px] border-solid py-20 rounded-[32px] px-4 md:px-10 mx-2 md:mx-16 mb-32 bg-transparent">
           <h1 className="font-[600] text-[24px] md:text-[40px] text-white text-center">
             Why DataFluent Academy?
           </h1>
@@ -116,7 +116,7 @@ const Academy = () => {
               Ready to Start Your Journey?
             </h1>
             <button className="btn w-48 text-[#43E8D8] text-[18px] font-[500] gap-2 text-sm flex justify-center items-center">
-              Enroll
+              Enroll Now
               <GoArrowUpRight />
             </button>
           </div>
@@ -130,7 +130,7 @@ const Academy = () => {
         AreaTwo="Job Placement"
         AreaThree="Course Satisfaction Rate"
       />
-      <Testimonial testimonials={testimonail} />
+      <Testimonial testimonials={testimonail} name="Hear from Our Students" />
       <Footer />
     </div>
   );
