@@ -55,7 +55,7 @@ const Home = () => {
         <Carousel />
       </section>
       <section className="about-background flex items-center py-64 justify-center flex-col bg-black w-screen">
-        <div className="shadow flex items-center justify-center flex-col border-[1px] border-solid border-[#2F2F2F99] px-2 md:px-16 py-14 bg-[#1A1A1A66] rounded-[32px] blur-[0.5px] mx-2">
+        <div className="shadow flex items-center justify-center flex-col border-[1px] border-solid border-[#2F2F2F99] px-2 md:px-16 py-14 bg-transparent rounded-[32px] blur-[0.5px] mx-2">
           <div className="contents text-[#FAFAFA]">
             <h1 className="text-[#20E4D1] text-base md:text-[20px] text-center font-[500]">
               About Us
@@ -83,7 +83,7 @@ const Home = () => {
           Advance Your Career with DataFluent Academy
         </h1>
         <div className="graduate flex justify-center flex-wrap items-stretch gap-32 md:gap-2 md:px-20 ellispe mx-2">
-          <div className="w-full lg:w-[50%] lg:h-[50%] border-[1px] border-solid border-[#2F2F2F99] px-4 md:px-16 py-10 bg-[#1A1A1A] rounded-[32px] blur-[0.5px]">
+          <div className="flex flex-col w-full lg:w-[50%] lg:h-[50%] border-[1px] border-solid border-[#2F2F2F99] px-4 md:px-16 py-10 bg-[#1A1A1A] rounded-[32px] blur-[0.5px]">
             <p>
               At DataFluent Academy, we speak the language of the future. Dive
               into transformative courses that empower you to master the skills
@@ -93,11 +93,11 @@ const Home = () => {
               build expertise in high-demand fields, guided by industry
               professionals, and prepare to make an impact on tomorrow’s world.
             </p>
+
             <button className="btn mt-8 w-full md:w-60 bg-[#20E4D1] text-black">
               Explore Our Courses
             </button>
           </div>
-
           <div className="flex justify-center items-center flex-1 relative">
             <img
               src={graduate}
@@ -126,7 +126,7 @@ const Home = () => {
         AreaTwo="Students Trained"
         AreaThree="Review Rate"
       />
-      <Testimonial testimonials={testimonials} />
+      <Testimonial testimonials={testimonials} name="What clients say" />
       <Card
         title={"Take the Next Step with DataFluent"}
         showButton={true}
