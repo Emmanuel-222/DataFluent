@@ -63,7 +63,7 @@ const Footer = () => {
               Invest in Your Future with DataFluent Academy
             </h1>
             <p className="text-[#20E4D1] text-sm flex justify-center items-center cursor-pointer">
-              Enroll
+              Enroll now
               <GoArrowUpRight />
             </p>
           </div>

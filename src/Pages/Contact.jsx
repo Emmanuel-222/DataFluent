@@ -1,3 +1,5 @@
+import Swal from 'sweetalert2'
+
 import formRectangle from "../../src/assets/Contact/Frame 1618873507.png";
 import phone from "../../src/assets/Contact/phone.png";
 import location from "../../src/assets/Contact/location.png";
@@ -6,16 +8,47 @@ import mail from "../../src/assets/Contact/mail.png";
 import { Footer } from "../components";
 
 const Contact = () => {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "038e052e-5630-4b8d-9984-54729365ba27");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      Swal.fire({
+        title: 'Success!',
+        text: 'The message was sent successfully!',
+        icon: 'success',
+        customClass: {
+          confirmButton: 'custom-button'
+        },
+        buttonsStyling: false,
+      })
+    }
+  };
+
   return (
     <div className="text-[#FAFAFA] h-screen w-screen">
       <section className="contact-background flex flex-col justify-center items-center gap-20">
-        <div className="text-center mt-4 md:mt-32">
+        <div className="text-center mt-0 md:mt-32">
           <h1 className="text-[3rem] text-white font-[600] mb-4">Contact Us</h1>
           <p className="text-[#BDBDBD]">
             Get in touch with our team - we’re ready to assist you
           </p>
         </div>
-        <form className="flex justify-center items-start gap-20 border-solid border-[1px] p-8 rounded-[32px] border-[#2F2F2F] bg-[#222222] mb-20">
+        <form onSubmit={onSubmit} className="flex justify-center items-start gap-20 border-solid border-[1px] p-8 rounded-[32px] border-[#2F2F2F] bg-[#222222] mb-20">
           <div className="w-full md:max-w-96 relative">
             <img src={formRectangle} alt="rec" />
             <div className="absolute top-16 left-4">
@@ -28,15 +61,27 @@ const Contact = () => {
               </div>
               <div className="mt-16 flex flex-col justify-between gap-8">
                 <div className="flex items-center gap-4">
-                  <img className="w-[36px] h-[36px]" src={phone} alt="phone-icon" />
+                  <img
+                    className="w-[36px] h-[36px]"
+                    src={phone}
+                    alt="phone-icon"
+                  />
                   <p>+234 810 652 2242</p>
                 </div>
                 <div className="flex items-center gap-4">
-                  <img className="w-[36px] h-[36px]" src={mail} alt="mail-icon" />
+                  <img
+                    className="w-[36px] h-[36px]"
+                    src={mail}
+                    alt="mail-icon"
+                  />
                   <p>datafluent@gmail.com</p>
                 </div>
                 <div className="flex items-center gap-4">
-                  <img className="w-[36px] h-[36px]" src={location} alt="location-icon" />
+                  <img
+                    className="w-[36px] h-[36px]"
+                    src={location}
+                    alt="location-icon"
+                  />
                   <p>Abuja, Nigeria</p>
                 </div>
               </div>
@@ -50,6 +95,8 @@ const Contact = () => {
                   className="bg-transparent text-[#797979] rounded-[16px] px-6 py-3 outline-none border-[#939393] border-[1px] border-solid"
                   type="text"
                   placeholder="Enter your full name"
+                  required
+                  name="name"
                 />
               </label>
               <label className="flex flex-col items-start gap-2">
@@ -58,6 +105,8 @@ const Contact = () => {
                   className="bg-transparent text-[#797979] rounded-[16px] px-6 py-3 outline-none border-[#939393] border-[1px] border-solid"
                   type="email"
                   placeholder="Enter your email address"
+                  required
+                  name="email"
                 />
               </label>
             </div>
@@ -67,6 +116,8 @@ const Contact = () => {
                 className="bg-transparent w-full text-[#797979] rounded-[16px] px-6 py-3 outline-none border-[#939393] border-[1px] border-solid"
                 placeholder="Subject"
                 type="text"
+                required
+                name="subject"
               />
             </label>
             <label className="flex flex-col items-start justify-center w-full gap-2">
@@ -74,6 +125,8 @@ const Contact = () => {
               <textarea
                 className="bg-transparent w-full text-[#797979] rounded-[16px] px-3 py-3 outline-none border-[#939393] border-[1px] border-solid"
                 placeholder="Write your message"
+                required
+                name="message"
               ></textarea>
             </label>
             <button className="btn w-full md:w-60 mt-0 md:mt-10 bg-[#43E8D8] text-black">
