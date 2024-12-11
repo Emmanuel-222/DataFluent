@@ -169,6 +169,16 @@
   background-repeat: no-repeat;
 }
 
+.custom-button {
+  background-color: #43E8D8; /* Custom green color */
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 
 @media (max-width: 1000px) {
   .left-quote-bg{
