@@ -8,8 +8,8 @@ import iconSix from "../../src/assets/card/icon-card6.png";
 
 const ServiceCard = () => {
   return (
-    <div className="flex gap-8 items-stretch justify-center cards-container">
-          <div className="card bg1 flex-1 flex flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
+    <div className="flex gap-8 items-stretch justify-center cards-container our-services-bg">
+          <div className="card bg1 flex-1 flex flex-col justify-between card-border px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
             <img
               className="h-[60px] w-[60px]"
               src={iconOne}
@@ -23,7 +23,7 @@ const ServiceCard = () => {
               </p>
             </div>
           </div>
-          <div className="card bg2 flex flex-1 flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
+          <div className="card bg2 flex flex-1 flex-col justify-between card-border px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
             <img
               className="h-[60px] w-[60px]"
               src={iconTwo}
@@ -37,7 +37,7 @@ const ServiceCard = () => {
               </p>
             </div>
           </div>
-          <div className="card bg3 flex flex-1 flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
+          <div className="card bg3 flex flex-1 flex-col justify-between card-border px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
             <img
               className="h-[60px] w-[60px]"
               src={iconThree}
@@ -53,7 +53,7 @@ const ServiceCard = () => {
               </p>
             </div>
           </div>
-          <div className="card bg4 flex flex-1 flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
+          <div className="card bg4 flex flex-1 flex-col justify-between card-border px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
             <img
               className="h-[60px] w-[60px]"
               src={iconFour}
@@ -69,7 +69,7 @@ const ServiceCard = () => {
               </p>
             </div>
           </div>
-          <div className="card bg5 flex flex-1 flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
+          <div className="card bg5 flex flex-1 flex-col justify-between card-border px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
             <img
               className="h-[60px] w-[60px]"
               src={iconFive}
@@ -86,7 +86,7 @@ const ServiceCard = () => {
               </p>
             </div>
           </div>
-          <div className="card bg6 flex flex-1 flex-col justify-between border-[1px] border-solid border-[#43E8D899] px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
+          <div className="card bg6 flex flex-1 flex-col justify-between card-border px-12 bg-[#1A1A1A] rounded-[32px] blur-[0.5px] pt-8 pb-10 bg-cover bg-center">
             <img
               className="h-[60px] w-[60px]"
               src={iconSix}
