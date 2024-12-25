@@ -1,6 +1,7 @@
 import { MdOutlineMiscellaneousServices } from "react-icons/md";
 import { GoArrowUpRight } from "react-icons/go";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 import { Footer, Testimonial, Card } from "../components";
 
@@ -19,7 +20,7 @@ const Services = () => {
       name: "Seun Lawrence",
       testimony:
         "DataFluent Enterprise transformed our digital presence. Their team brought our vision to life with sleek, intuitive website that has driven customer engagement to new heights!",
-      profile: profileOne ,
+      profile: profileOne,
       company: "Darren Hub",
     },
     {
@@ -105,10 +106,12 @@ const Services = () => {
           </div>
           {/* Bigger Screen */}
           <div className="bottom hidden md:flex md:flex-row px-4 justify-between items-center gap-4">
-            <button className="btn flex items-center justify-center text-[#43E8D8] w-full md:w-60 font-[500] md:ml-64 gap-2 text-center">
-              View all projects
-              <GoArrowUpRight />
-            </button>
+            <Link to="/projects">
+              <button className="btn flex items-center justify-center text-[#43E8D8] w-full md:w-60 font-[500] md:ml-64 gap-2 text-center">
+                View all projects
+                <GoArrowUpRight />
+              </button>
+            </Link>
             <div className="md:flex items-center gap-4 text-[#20E4D1] text-2xl">
               <IoArrowBack />
               <IoArrowForward />

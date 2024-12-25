@@ -60,11 +60,17 @@
   background-position: center;
 }
 
+.our-services-bg{
+  background-image: url('./assets/Ellipse_57_Services.png');
+  background-size: cover;
+  background-position: center;
+}
+
 .card-border{
   border: 1px solid;
-  border-top-color: transparent;
+  border-top-color: #1a1a1a;
   border-bottom-color: #43E8D833;
-  border-left-color: transparent;
+  border-left-color: #1a1a1a;
   border-right-color: #43E8D833;
 }
 
