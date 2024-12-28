@@ -38,7 +38,7 @@ const DataScience = () => {
       </section>
       <section className="flex items-center flex-col bg-black w-screen gap-8">
         <h1 className="font-[600] text-[20px] md:text-[40px]">Why Enroll in This Course?</h1>
-        <div className="flex justify-center items-stretch gap-4 flex-wrap w-screen bg-black px-28">
+        <div className="flex justify-center items-stretch gap-4 flex-wrap w-screen bg-black mx-4 md:px-28">
           <AcademyCard
             title="Hands-On Project"
             img={imageOne}
