@@ -5,6 +5,8 @@ export { default as Contact } from "../Pages/Contact";
 export { default as Academy } from "../Pages/Academy";
 export { default as Services } from "../Pages/Services";
 export { default as Projects } from "../Pages/Projects";
+export { default as ScrollToTop } from "../components/ScrollToTop";
+export { default as DataScience } from "../Pages/DataScience";
 export { default as Footer } from "./Footer";
 export { default as Card } from "./Card";
 export { default as Carousel} from "./Carousel";

@@ -107,8 +107,8 @@ const Academy = () => {
         <div className="flex flex-wrap justify-center items-stretch gap-14 mx-4 md:mx-24 my-8">
           {
           //Destructed information from the CourseCardInfo to make the code neater
-            CourseCardInfo.map(({ courseTitle, description, img}) => (
-              <CourseCard key={courseTitle} courseTitle={courseTitle} description={description} img={img} />
+            CourseCardInfo.map(({ courseTitle, description, img, path }) => (
+              <CourseCard key={courseTitle} courseTitle={courseTitle} description={description} img={img} path={path} />
             ))
           }
           <div className="flex flex-1 flex-col rounded-[32px] justify-start items-start px-1 pt-1 pb-8 gap-4">

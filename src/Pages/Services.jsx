@@ -99,10 +99,12 @@ const Services = () => {
               <IoArrowBack />
               <IoArrowForward />
             </div>
-            <button className="btn flex items-center justify-center text-[#43E8D8] w-full md:w-60 font-[500] md:ml-64 gap-2 text-center">
-              View all projects
-              <GoArrowUpRight />
-            </button>
+            <Link to="/projects">
+              <button className="btn flex items-center justify-center text-[#43E8D8] w-full md:w-60 font-[500] md:ml-64 gap-2 text-center">
+                View all projects
+                <GoArrowUpRight />
+              </button>
+            </Link>
           </div>
           {/* Bigger Screen */}
           <div className="bottom hidden md:flex md:flex-row px-4 justify-between items-center gap-4">
