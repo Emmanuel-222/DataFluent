@@ -1,6 +1,6 @@
 import { IoIosCheckmarkCircle } from "react-icons/io";
 
-import dataScience from "../../src/assets/about-course/data-science.png";
+import dataScience from "../../src/assets/about-course/datascience.png";
 
 const AboutCourse = () => {
   return (
@@ -23,7 +23,7 @@ const AboutCourse = () => {
         </ul>
       </div>
       <div className="">
-        <img className="size-[28rem]" src={dataScience} alt="PhotoForDataScience" />
+        <img className="size-[28rem] object-cover" src={dataScience} alt="PhotoForDataScience" />
       </div>
     </div>
   );

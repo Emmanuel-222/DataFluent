@@ -43,9 +43,12 @@ const Home = () => {
               future leaders-driving success in the digital age.
             </h3>
             <div className="flex flex-col md:flex-row justify-center items-center gap-4 w-full">
-              <button className="btn bg-[#20E4D1] text-[#000] w-full md:w-60">
-                Explore Our Services
-              </button>
+              <Link to="/services">
+                <button className="btn bg-[#20E4D1] text-[#000] w-full md:w-60">
+                  Explore Our Services
+                </button>
+              </Link>
+
               <button className="btn bg-black text-[#20E4D1] w-full md:w-60">
                 Learn with Us
               </button>
@@ -93,10 +96,11 @@ const Home = () => {
               build expertise in high-demand fields, guided by industry
               professionals, and prepare to make an impact on tomorrow’s world.
             </p>
-
-            <button className="btn mt-8 w-full md:w-60 bg-[#20E4D1] text-black">
-              Explore Our Courses
-            </button>
+            <Link to="/academy">
+              <button className="btn mt-8 w-full md:w-60 bg-[#20E4D1] text-black">
+                Explore Our Courses
+              </button>
+            </Link>
           </div>
           <div className="flex justify-center items-center flex-1 relative">
             <img

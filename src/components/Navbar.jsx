@@ -5,13 +5,11 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  // const [activeLink, setActiveLink] = useState(false);
-  // const handleChangeColor = () => setActiveLink(!activeLink);
 
   const handleClick = () => setNav(!nav);
 
   return (
-    <nav className="navbar bg-black text-white px-8 py-[24px] w-full">
+    <nav id="navnav" className="navbar bg-black text-white px-8 py-[24px] w-full">
       {/* Desktop Navigation */}
       <div className="hidden lg:flex justify-between items-center w-full">
         <div className="logo py-6 px-16 rounded-3xl bg-[#20E4D1] bg-gradient-to-t from-[#43E8D8] to-[#1A1A1A]"></div>

@@ -18,3 +18,6 @@ export { default as CourseCardInfo } from "./CourseCardInfo";
 export { default as Impact } from "./Impact";
 export { default as ProjectCard } from "./ProjectCard";
 export { default as Pagination } from "./Pagination";
+export { default as MainContent } from "./MainContent";
+export { default as AboutCourse } from "./AboutCourse";
+export { default as Accordion } from "./Accordion";
