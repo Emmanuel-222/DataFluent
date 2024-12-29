@@ -8,6 +8,9 @@ export default {
     extend: {
       fontFamily: {
         'montserrat': ["Montserrat", 'sans-serif']
+      },
+      scrollBehavior: {
+        smooth: true,
       }
     },
   },

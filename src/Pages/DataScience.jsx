@@ -1,4 +1,4 @@
-import { AcademyCard, Footer, Testimonial } from "../components";
+import { AcademyCard, Footer, Testimonial, MainContent, AboutCourse, Accordion } from "../components";
 import NextCohort from "../components/NextCohort";
 
 import imageOne from "../../src/assets/course-academyCard/Frame-1.png";
@@ -9,8 +9,8 @@ import imageFive from "../../src/assets/course-academyCard/Frame-5.png";
 import imageSix from "../../src/assets/course-academyCard/Frame-6.png";
 import profileOne from "../../src/assets/card/image1.png";
 import profileTwo from "../../src/assets/card/image2.png";
-import MainContent from "../components/MainContent";
-import AboutCourse from "../components/AboutCourse";
+import GradWorkIn from "../components/GradWorkIn";
+import EnrollToday from "../components/EnrollToday";
 
 const DataScience = () => {
     const testimonials = [
@@ -35,10 +35,11 @@ const DataScience = () => {
         <MainContent />
         <NextCohort />
         <AboutCourse />
+        <Accordion />
       </section>
       <section className="flex items-center flex-col bg-black w-screen gap-8">
         <h1 className="font-[600] text-[20px] md:text-[40px]">Why Enroll in This Course?</h1>
-        <div className="flex justify-center items-stretch gap-4 flex-wrap w-screen bg-black mx-4 md:px-28">
+        <div className="flex justify-center items-stretch gap-4 flex-wrap w-screen bg-black mx-4 px-4 md:px-28">
           <AcademyCard
             title="Hands-On Project"
             img={imageOne}
@@ -71,6 +72,8 @@ const DataScience = () => {
           />
         </div>
       </section>
+      <GradWorkIn />
+      <EnrollToday /> 
       <Testimonial testimonials={testimonials} name="What clients say"/>
       <Footer />
     </div>
