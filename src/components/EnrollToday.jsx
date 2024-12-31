@@ -1,6 +1,8 @@
+import propType from "prop-types";
+
 import { TbCurrencyNaira } from "react-icons/tb";
 
-const EnrollToday = () => {
+const EnrollToday = ({ price }) => {
   return (
     <div className="flex items-center py-40 md:px-32 justify-between gap-8 flex-col bg-black w-screen">
       <h1 className="font-[600] text-xl md:text-[40px]">Enroll Today</h1>
@@ -9,7 +11,7 @@ const EnrollToday = () => {
           <div className="size-[10px] bg-[#20E4D1] rounded-full"></div>
           <h1 className="text-xl md:text-[48px] font-[600] flex items-center gap-1">
             <TbCurrencyNaira />
-            300,000
+            {price}
           </h1>
           <div className="size-[10px] bg-[#20E4D1] rounded-full"></div>
         </div>
@@ -27,5 +29,9 @@ const EnrollToday = () => {
     </div>
   );
 };
+
+EnrollToday.propTypes = {
+  price: propType.string.isRequired,
+}
 
 export default EnrollToday;

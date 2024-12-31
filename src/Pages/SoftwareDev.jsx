@@ -16,13 +16,13 @@ import imageFive from "../../src/assets/course-academyCard/Frame-5.png";
 import imageSix from "../../src/assets/course-academyCard/Frame-6.png";
 import profileOne from "../../src/assets/card/image1.png";
 import profileTwo from "../../src/assets/card/image2.png";
-import DataScienceImg from "../../src/assets/academy/course-1.png";
-import dataScience from "../../src/assets/about-course/datascience.png";
+import SoftwareDevImg from "../../src/assets/academy/course-6.png";
+import softwareDev from "../../src/assets/about-course/softwareEng.png";
 
 import GradWorkIn from "../components/GradWorkIn";
 import EnrollToday from "../components/EnrollToday";
 
-const DataScience = () => {
+const SoftwareDev = () => {
   const testimonials = [
     {
       name: "Seun Lawrence",
@@ -42,55 +42,53 @@ const DataScience = () => {
 
   const data = [
     {
-      title: "Introduction to Data Science",
+      title: "HTML",
       content:
-        "Gain a foundational understanding of data science, its importance, and how it drives decision-making in various industries. Learn key concepts, tools, and data lifecycle.",
+        "Learn the fundamentals of HTML, the backbone of web development. Discover how to structure web pages with elements, tags, and attributes to create well-organized content.",
     },
     {
-      title: "Data Analysis with Excel",
+      title: "CSS",
       content: "This is the content of Section 2.",
     },
     {
-      title: "Advance Excel for Data Analysis",
+      title: "Version Control with GIT",
       content: "This is the content of Section 1.",
     },
     {
-      title: "Data Manipulation with SQL",
+      title: "Backend Development and Deployment",
       content: "This is the content of Section 2.",
     },
-    { title: "Advanced SQL", content: "This is the content of Section 1." },
-    { title: "Python Basics", content: "This is the content of Section 2." },
+    { title: "Javascript", content: "This is the content of Section 1." },
+    { title: "Frontend Development for Advanced", content: "This is the content of Section 2." },
     {
-      title: "Intermediate Pendas and Machine Learning",
+      title: "Responsive Design",
       content: "This is the content of Section 1.",
     },
-    { title: "Capsone Project", content: "This is the content of Section 2." },
+    { title: "RESTful APIs", content: "This is the content of Section 2." },
+    { title: "Authentication and Authorization", content: "This is the content of Section 2." },
+    { title: "Testing and Debugging", content: "This is the content of Section 2." },
+    { title: "Development and DevOps", content: "This is the content of Section 2." },
+    { title: "Capstone Project", content: "This is the content of Section 2." },
   ];
+
   return (
     <div className="container text-[#FAFAFA] h-screen w-screen bg-black">
       <section className="flex items-center flex-col bg-black w-screen">
         <MainContent
-          title={"Data Science"}
-          paragraph="Master data analysis, visualization, and machine learning to uncover
-            insights and drive decision-making."
-          img={DataScienceImg}
-          size={"72px"}
+          title={"Software Development"}
+          paragraph="Build what works and while at it, iterate quickly and efficiently."
+          img={SoftwareDevImg}
+          size={"3rem"}
         />
         <NextCohort />
         <AboutCourse
-          paragraph="This course is designed to provide a comprehensive introduction to
-                  Data Science, equipping you with the practical skills and knowledge
-                  needed to analyze and interpret complex data. From understanding
-                  foundational concepts to applying tools like Python, SQL, and Excel,
-                  you’ll gain hands-on experience through real-world projects. Whether
-                  you’re starting a new career or advancing in your current role, this
-                  course prepares you to thrive in today’s data-driven world."
-          item1={"Learn the fundamentals of data science."}
-          item2={"Master tools like Python, SQL, and Excel."}
-          item3={"Work on real-world projects with expert guidance."}
-          img={dataScience}
+          paragraph="This course provides a solid foundation in software development, guiding you through the entire process of building robust and scalable applications. Learn key programming languages, development frameworks, and best practices for creating modern web and mobile applications. With a focus on hands-on projects, this course equips you with the technical and problem-solving skills needed to thrive as a software developer in today’s tech-driven world."
+          item1={"Learn both front-end and back-end development for building dynamic applications"}
+          item2={"Collaborate efficiently and manage codebases using Git and Github"}
+          item3={"Learn how to design and consume RESTful APIs for seamless connectivity"}
+          img={softwareDev}
         />
-        <Accordion data={data}/>
+        <Accordion data={data} />
       </section>
       <section className="flex items-center flex-col bg-black w-screen gap-8">
         <h1 className="font-[600] text-[20px] md:text-[40px]">
@@ -130,11 +128,11 @@ const DataScience = () => {
         </div>
       </section>
       <GradWorkIn />
-      <EnrollToday price="300,000"/>
+      <EnrollToday price="500,000" />
       <Testimonial testimonials={testimonials} name="What clients say" />
       <Footer />
     </div>
   );
 };
 
-export default DataScience;
+export default SoftwareDev;

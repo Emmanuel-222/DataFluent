@@ -16,13 +16,13 @@ import imageFive from "../../src/assets/course-academyCard/Frame-5.png";
 import imageSix from "../../src/assets/course-academyCard/Frame-6.png";
 import profileOne from "../../src/assets/card/image1.png";
 import profileTwo from "../../src/assets/card/image2.png";
-import DataScienceImg from "../../src/assets/academy/course-1.png";
-import dataScience from "../../src/assets/about-course/datascience.png";
+import DataAnalysisImg from "../../src/assets/academy/course-4.png";
+import dataAnalysis from "../../src/assets/about-course/dataAnalysis.png";
 
 import GradWorkIn from "../components/GradWorkIn";
 import EnrollToday from "../components/EnrollToday";
 
-const DataScience = () => {
+const DataAnalysis = () => {
   const testimonials = [
     {
       name: "Seun Lawrence",
@@ -42,53 +42,71 @@ const DataScience = () => {
 
   const data = [
     {
-      title: "Introduction to Data Science",
+      title: "Introduction to Data Analysis",
       content:
-        "Gain a foundational understanding of data science, its importance, and how it drives decision-making in various industries. Learn key concepts, tools, and data lifecycle.",
+        "Understand the basics of data analysis, its importance, and the key steps involved in turning raw data into actionable insights.",
     },
     {
-      title: "Data Analysis with Excel",
+      title: "Data Cleaning and Preprocessing",
       content: "This is the content of Section 2.",
     },
     {
-      title: "Advance Excel for Data Analysis",
+      title: "Data Visualization with Excel and Tableau",
       content: "This is the content of Section 1.",
     },
     {
-      title: "Data Manipulation with SQL",
+      title: "Descriptive and Inferential Statistics",
       content: "This is the content of Section 2.",
     },
-    { title: "Advanced SQL", content: "This is the content of Section 1." },
-    { title: "Python Basics", content: "This is the content of Section 2." },
+    { 
+        title: "Advanced Excel Techniques", 
+        content: "This is the content of Section 1." 
+    },
+    { 
+        title: "Introduction to Python for Data Analysis", 
+        content: "This is the content of Section 2." },
     {
-      title: "Intermediate Pendas and Machine Learning",
+      title: "Exploratory Data Analysis (EDA)",
       content: "This is the content of Section 1.",
     },
-    { title: "Capsone Project", content: "This is the content of Section 2." },
+    { 
+        title: "Introduction to SQL for Data Analysis", 
+        content: "This is the content of Section 2." 
+    },
+    { 
+        title: "Data Reporting and Storytelling", 
+        content: "This is the content of Section 2." 
+    },
+    { 
+        title: "Capstone Project", 
+        content: "This is the content of Section 2." 
+    },
   ];
+
   return (
     <div className="container text-[#FAFAFA] h-screen w-screen bg-black">
       <section className="flex items-center flex-col bg-black w-screen">
         <MainContent
-          title={"Data Science"}
-          paragraph="Master data analysis, visualization, and machine learning to uncover
-            insights and drive decision-making."
-          img={DataScienceImg}
-          size={"72px"}
+          title={"Data Analysis"}
+          paragraph="Accelerate your career in data, and earn a data analysis certification."
+          img={DataAnalysisImg}
+          size={"70px"}
         />
         <NextCohort />
         <AboutCourse
-          paragraph="This course is designed to provide a comprehensive introduction to
-                  Data Science, equipping you with the practical skills and knowledge
-                  needed to analyze and interpret complex data. From understanding
-                  foundational concepts to applying tools like Python, SQL, and Excel,
-                  you’ll gain hands-on experience through real-world projects. Whether
-                  you’re starting a new career or advancing in your current role, this
-                  course prepares you to thrive in today’s data-driven world."
-          item1={"Learn the fundamentals of data science."}
-          item2={"Master tools like Python, SQL, and Excel."}
-          item3={"Work on real-world projects with expert guidance."}
-          img={dataScience}
+          paragraph={
+            "This comprehensive course introduces you to the fundamentals of data analysis, teaching you how to collect, clean, explore, and visualize data to drive informed decisions. Gain hands-on experience with tools like Excel, Tableau, Python, and SQL while mastering techniques for uncovering insights and solving real-world problems. Designed for both beginners and professionals, this course prepares you for success in a data-driven world."
+          }
+          item1={
+            "Learn to prepare and preprocess raw data for analysis"
+          }
+          item2={
+            "Master descriptive and inferential statistics for meaningful insights"
+          }
+          item3={
+            "Create stunning visualizations with Tableau, Excel, and Python libraries"
+          }
+          img={dataAnalysis}
         />
         <Accordion data={data}/>
       </section>
@@ -130,11 +148,11 @@ const DataScience = () => {
         </div>
       </section>
       <GradWorkIn />
-      <EnrollToday price="300,000"/>
+      <EnrollToday price="250,000"/>
       <Testimonial testimonials={testimonials} name="What clients say" />
       <Footer />
     </div>
   );
 };
 
-export default DataScience;
+export default DataAnalysis;

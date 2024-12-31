@@ -16,13 +16,13 @@ import imageFive from "../../src/assets/course-academyCard/Frame-5.png";
 import imageSix from "../../src/assets/course-academyCard/Frame-6.png";
 import profileOne from "../../src/assets/card/image1.png";
 import profileTwo from "../../src/assets/card/image2.png";
-import DataScienceImg from "../../src/assets/academy/course-1.png";
-import dataScience from "../../src/assets/about-course/datascience.png";
+import MobileDevImg from "../../src/assets/academy/course-5.png";
+import mobileDev from "../../src/assets/about-course/mobileDev.png";
 
 import GradWorkIn from "../components/GradWorkIn";
 import EnrollToday from "../components/EnrollToday";
 
-const DataScience = () => {
+const MobileDev = () => {
   const testimonials = [
     {
       name: "Seun Lawrence",
@@ -42,53 +42,69 @@ const DataScience = () => {
 
   const data = [
     {
-      title: "Introduction to Data Science",
+      title: "Introduction to Mobile Development",
       content:
-        "Gain a foundational understanding of data science, its importance, and how it drives decision-making in various industries. Learn key concepts, tools, and data lifecycle.",
+        "Understand the basics of mobile app development, the differences between native and cross-platform apps, and the tools used in the industry.",
     },
     {
-      title: "Data Analysis with Excel",
+      title: "Programming Basics for Mobile Development",
       content: "This is the content of Section 2.",
     },
     {
-      title: "Advance Excel for Data Analysis",
+      title: "UI/UX Design for Mobile Apps",
       content: "This is the content of Section 1.",
     },
     {
-      title: "Data Manipulation with SQL",
+      title: "Cross-Platform Development with Flutter or React Native",
       content: "This is the content of Section 2.",
     },
-    { title: "Advanced SQL", content: "This is the content of Section 1." },
-    { title: "Python Basics", content: "This is the content of Section 2." },
+    { 
+        title: "API Integration", 
+        content: "This is the content of Section 1." 
+    },
+    { 
+        title: "Database Integration and Backend Connectivity", 
+        content: "This is the content of Section 2." },
     {
-      title: "Intermediate Pendas and Machine Learning",
+      title: "Mobile App Testing",
       content: "This is the content of Section 1.",
     },
-    { title: "Capsone Project", content: "This is the content of Section 2." },
+    { 
+        title: "App Deployment", 
+        content: "This is the content of Section 2." 
+    },
+    { 
+        title: "Advanced Features and Optimization", 
+        content: "This is the content of Section 2." 
+    },
+    { 
+        title: "Capstone Project", 
+        content: "This is the content of Section 2." 
+    },
   ];
+
   return (
     <div className="container text-[#FAFAFA] h-screen w-screen bg-black">
       <section className="flex items-center flex-col bg-black w-screen">
         <MainContent
-          title={"Data Science"}
-          paragraph="Master data analysis, visualization, and machine learning to uncover
-            insights and drive decision-making."
-          img={DataScienceImg}
-          size={"72px"}
+          title={"Mobile Development"}
+          paragraph="Build, test, and deploy mobile applications with a focus on user experience and functionality."
+          img={MobileDevImg}
+          size={"3rem"}
         />
         <NextCohort />
         <AboutCourse
-          paragraph="This course is designed to provide a comprehensive introduction to
-                  Data Science, equipping you with the practical skills and knowledge
-                  needed to analyze and interpret complex data. From understanding
-                  foundational concepts to applying tools like Python, SQL, and Excel,
-                  you’ll gain hands-on experience through real-world projects. Whether
-                  you’re starting a new career or advancing in your current role, this
-                  course prepares you to thrive in today’s data-driven world."
-          item1={"Learn the fundamentals of data science."}
-          item2={"Master tools like Python, SQL, and Excel."}
-          item3={"Work on real-world projects with expert guidance."}
-          img={dataScience}
+          paragraph={
+            "This course provides a comprehensive introduction to mobile application development, equipping you with the skills to design, build, and deploy robust apps for iOS and Android platforms. Learn to code with industry-standard programming languages and frameworks while mastering UI/UX design principles for mobile. Through hands-on projects, this course prepares you to create functional, user-friendly apps that meet real-world demands."
+          }
+          item1={"Learn to build apps for both iOS and Android using frameworks like Flutter or React Native"}
+          item2={
+            "Learn to connect apps to databases using Firebase or SQLite for real-time data management"
+          }
+          item3={
+            "Build apps that interact with external APIs for advanced functionality"
+          }
+          img={mobileDev}
         />
         <Accordion data={data}/>
       </section>
@@ -130,11 +146,11 @@ const DataScience = () => {
         </div>
       </section>
       <GradWorkIn />
-      <EnrollToday price="300,000"/>
+      <EnrollToday price="700,000"/>
       <Testimonial testimonials={testimonials} name="What clients say" />
       <Footer />
     </div>
   );
 };
 
-export default DataScience;
+export default MobileDev;

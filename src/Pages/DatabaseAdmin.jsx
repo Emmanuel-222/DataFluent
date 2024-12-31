@@ -16,13 +16,13 @@ import imageFive from "../../src/assets/course-academyCard/Frame-5.png";
 import imageSix from "../../src/assets/course-academyCard/Frame-6.png";
 import profileOne from "../../src/assets/card/image1.png";
 import profileTwo from "../../src/assets/card/image2.png";
-import DataScienceImg from "../../src/assets/academy/course-1.png";
-import dataScience from "../../src/assets/about-course/datascience.png";
+import DatabaseAdminImg from "../../src/assets/academy/course-3.png";
+import databaseAdmin from "../../src/assets/about-course/databaseAdmin.png";
 
 import GradWorkIn from "../components/GradWorkIn";
 import EnrollToday from "../components/EnrollToday";
 
-const DataScience = () => {
+const DatabaseAdmin = () => {
   const testimonials = [
     {
       name: "Seun Lawrence",
@@ -42,53 +42,65 @@ const DataScience = () => {
 
   const data = [
     {
-      title: "Introduction to Data Science",
+      title: "Introduction to Database Administration",
       content:
         "Gain a foundational understanding of data science, its importance, and how it drives decision-making in various industries. Learn key concepts, tools, and data lifecycle.",
     },
     {
-      title: "Data Analysis with Excel",
+      title: "Relational Database Design",
       content: "This is the content of Section 2.",
     },
     {
-      title: "Advance Excel for Data Analysis",
+      title: "SQL Basics and Advanced Querying",
       content: "This is the content of Section 1.",
     },
     {
-      title: "Data Manipulation with SQL",
+      title: "Database Installation and Configuration",
       content: "This is the content of Section 2.",
     },
-    { title: "Advanced SQL", content: "This is the content of Section 1." },
-    { title: "Python Basics", content: "This is the content of Section 2." },
+    { 
+        title: "Backup and Recovery Strategies", 
+        content: "This is the content of Section 1." 
+    },
+    { 
+        title: "Database Security", 
+        content: "This is the content of Section 2." },
     {
-      title: "Intermediate Pendas and Machine Learning",
+      title: "Performance Optimization",
       content: "This is the content of Section 1.",
     },
-    { title: "Capsone Project", content: "This is the content of Section 2." },
+    { 
+        title: "NoSQL Databases", 
+        content: "This is the content of Section 2." 
+    },
+    { 
+        title: "Monitoring and Maintenance", 
+        content: "This is the content of Section 2." 
+    },
+    { 
+        title: "Capstone Project", 
+        content: "This is the content of Section 2." 
+    },
   ];
+
   return (
     <div className="container text-[#FAFAFA] h-screen w-screen bg-black">
       <section className="flex items-center flex-col bg-black w-screen">
         <MainContent
-          title={"Data Science"}
-          paragraph="Master data analysis, visualization, and machine learning to uncover
-            insights and drive decision-making."
-          img={DataScienceImg}
-          size={"72px"}
+          title={"Data Adminstration"}
+          paragraph="Gain skills in database management, security, and performance tuning for high-availability systems."
+          img={DatabaseAdminImg}
+          size={"60px"}
         />
         <NextCohort />
         <AboutCourse
-          paragraph="This course is designed to provide a comprehensive introduction to
-                  Data Science, equipping you with the practical skills and knowledge
-                  needed to analyze and interpret complex data. From understanding
-                  foundational concepts to applying tools like Python, SQL, and Excel,
-                  you’ll gain hands-on experience through real-world projects. Whether
-                  you’re starting a new career or advancing in your current role, this
-                  course prepares you to thrive in today’s data-driven world."
-          item1={"Learn the fundamentals of data science."}
-          item2={"Master tools like Python, SQL, and Excel."}
-          item3={"Work on real-world projects with expert guidance."}
-          img={dataScience}
+          paragraph={
+            "This course provides a comprehensive guide to database administration, equipping you with the skills to design, manage, and secure databases for enterprise-level applications. Learn how to optimize performance, ensure data integrity, and implement backup and recovery strategies using industry-standard tools. With hands-on training and real-world projects, this course prepares you for a career as a database administrator in today’s data-driven world."
+          }
+          item1={"Learn to design logical and physical database structures for optimal performance"}
+          item2={"Gain expertise with platforms like MySQL, PostgreSQL, and Oracle"}
+          item3={"Understand how to protect databases from breaches using encryption and access control"}
+          img={databaseAdmin}
         />
         <Accordion data={data}/>
       </section>
@@ -130,11 +142,11 @@ const DataScience = () => {
         </div>
       </section>
       <GradWorkIn />
-      <EnrollToday price="300,000"/>
+      <EnrollToday price="250,000"/>
       <Testimonial testimonials={testimonials} name="What clients say" />
       <Footer />
     </div>
   );
 };
 
-export default DataScience;
+export default DatabaseAdmin;

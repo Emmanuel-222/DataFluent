@@ -1,8 +1,9 @@
-import DataScienceImg from "../../src/assets/academy/course-1.png";
+import propType from "prop-types";
+
 import firstImg from "../../src/assets/main-content/Fireworks Half.png";
 import secondImg from "../../src/assets/main-content/Group 444.png";
 
-const MainContent = () => {
+const MainContent = ({ img, title, paragraph, size }) => {
   return (
     <div className="">
       {/* bigger screen */}
@@ -12,10 +13,9 @@ const MainContent = () => {
             <img className="size-20" src={firstImg} alt="firstPhoto" />
             <img className="size-20" src={secondImg} alt="secondPhoto" />
           </div>
-          <h1 className="text-3xl md:text-[72px] font-[700]">Data Science</h1>
-          <p className="text-wrap text-[#fafafa]">
-            Master data analysis, visualization, and machine learning to uncover
-            insights and drive decision-making.
+          <h1 className={`text-3xl md:text-[${size}] font-[700]`}>{title}</h1>
+          <p className="text-wrap text-[#fafafa] mt-6">
+            {paragraph}
           </p>
           <button className="btn w-full md:w-48 bg-[#20E4D1] text-[#121212] mt-8">
             Enroll Now
@@ -24,7 +24,7 @@ const MainContent = () => {
         <div>
           <img
             className="size-[28rem] object-contain"
-            src={DataScienceImg}
+            src={img}
             alt="DataScience-photo"
           />
         </div>
@@ -34,7 +34,7 @@ const MainContent = () => {
         <div>
           <img
             className="size-[28rem] object-contain"
-            src={DataScienceImg}
+            src={img}
             alt="DataScience-photo"
           />
         </div>
@@ -43,10 +43,9 @@ const MainContent = () => {
             <img className="size-20" src={firstImg} alt="firstPhoto" />
             <img className="size-20" src={secondImg} alt="secondPhoto" />
           </div>
-          <h1 className="text-3xl md:text-[72px] font-[700]">Data Science</h1>
+          <h1 className="text-3xl md:text-[72px] font-[700]">{title}</h1>
           <p className="text-wrap text-[#fafafa]">
-            Master data analysis, visualization, and machine learning to uncover
-            insights and drive decision-making.
+            {paragraph}
           </p>
           <button className="btn w-full md:w-48 bg-[#20E4D1] text-[#121212] mt-8">
             Enroll Now
@@ -55,6 +54,13 @@ const MainContent = () => {
       </div>
     </div>
   );
+};
+
+MainContent.propTypes = {
+  img: propType.string.isRequired,
+  title: propType.string.isRequired,
+  paragraph: propType.string.isRequired,
+  size: propType.string.isRequired,
 };
 
 export default MainContent;

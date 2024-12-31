@@ -23,7 +23,7 @@ const CourseCardInfo = [
     description:
       "Learn to build and optimize data pipelines, ensuring reliable and efficient data flow for analytics.",
     img: courseTwo,
-    path: "/course/data-engineering",
+    path: "/course/data-eng",
   },
   {
     courseTitle: "Database Administration",
