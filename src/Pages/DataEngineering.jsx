@@ -16,13 +16,13 @@ import imageFive from "../../src/assets/course-academyCard/Frame-5.png";
 import imageSix from "../../src/assets/course-academyCard/Frame-6.png";
 import profileOne from "../../src/assets/card/image1.png";
 import profileTwo from "../../src/assets/card/image2.png";
-import DataScienceImg from "../../src/assets/academy/course-1.png";
-import dataScience from "../../src/assets/about-course/datascience.png";
+import DataEngineeringImg from "../../src/assets/academy/course-2.png";
+import dataEng from "../../src/assets/about-course/dataEng.png";
 
 import GradWorkIn from "../components/GradWorkIn";
 import EnrollToday from "../components/EnrollToday";
 
-const DataScience = () => {
+const DataEngineering = () => {
   const testimonials = [
     {
       name: "Seun Lawrence",
@@ -42,55 +42,71 @@ const DataScience = () => {
 
   const data = [
     {
-      title: "Introduction to Data Science",
+      title: "Introduction to Data Engineering",
       content:
         "Gain a foundational understanding of data science, its importance, and how it drives decision-making in various industries. Learn key concepts, tools, and data lifecycle.",
     },
     {
-      title: "Data Analysis with Excel",
+      title: "Introduction to Python",
       content: "This is the content of Section 2.",
     },
     {
-      title: "Advance Excel for Data Analysis",
+      title: "Python for visualization, pipeline, and web scraping",
       content: "This is the content of Section 1.",
     },
     {
-      title: "Data Manipulation with SQL",
+      title: "SQL Fundamentals",
       content: "This is the content of Section 2.",
     },
-    { title: "Advanced SQL", content: "This is the content of Section 1." },
-    { title: "Python Basics", content: "This is the content of Section 2." },
+    { 
+        title: "Advanced SQL", 
+        content: "This is the content of Section 1." 
+    },
+    { 
+        title: "Database management and Data warehousing", 
+        content: "This is the content of Section 2." },
     {
-      title: "Intermediate Pendas and Machine Learning",
+      title: "Introduction to Linux",
       content: "This is the content of Section 1.",
     },
-    { title: "Capsone Project", content: "This is the content of Section 2." },
+    { 
+        title: "Integrated Development Environment (IDE) and Version Control", 
+        content: "This is the content of Section 2." 
+    },
+    { 
+        title: "Non-Relational Databases", 
+        content: "This is the content of Section 2." 
+    },
+    { 
+        title: "Introduction to MongoDB", 
+        content: "This is the content of Section 2." 
+    },
+    { 
+        title: "Capstone Project", 
+        content: "This is the content of Section 2." 
+    },
   ];
+
   return (
     <div className="container text-[#FAFAFA] h-screen w-screen bg-black">
       <section className="flex items-center flex-col bg-black w-screen">
         <MainContent
-          title={"Data Science"}
-          paragraph="Master data analysis, visualization, and machine learning to uncover
-            insights and drive decision-making."
-          img={DataScienceImg}
-          size={"72px"}
+          title={"Data Engineering"}
+          paragraph="Learn to build and optimize data pipelines, ensuring reliable and efficient data flow for analytics"
+          img={DataEngineeringImg}
+          size={"70px"}
         />
         <NextCohort />
         <AboutCourse
-          paragraph="This course is designed to provide a comprehensive introduction to
-                  Data Science, equipping you with the practical skills and knowledge
-                  needed to analyze and interpret complex data. From understanding
-                  foundational concepts to applying tools like Python, SQL, and Excel,
-                  you’ll gain hands-on experience through real-world projects. Whether
-                  you’re starting a new career or advancing in your current role, this
-                  course prepares you to thrive in today’s data-driven world."
-          item1={"Learn the fundamentals of data science."}
-          item2={"Master tools like Python, SQL, and Excel."}
-          item3={"Work on real-world projects with expert guidance."}
-          img={dataScience}
+          paragraph={
+            "This course equips you with the skills to design, build, and maintain scalable data infrastructure. Learn how to process and manage large datasets efficiently using industry-standard tools and techniques. From mastering ETL pipelines to deploying cloud-based solutions, this course prepares you for a critical role in today’s data-driven organizations. Perfect for anyone looking to dive into the world of big data and analytics."
+          }
+          item1={"Learn to create robust and efficient ETL processes"}
+          item2={"Gain expertise in SQL and NoSQL databases"}
+          item3={"Master cloud platforms like AWS, Google Cloud, and Azure"}
+          img={dataEng}
         />
-        <Accordion data={data}/>
+        <Accordion data={data} />
       </section>
       <section className="flex items-center flex-col bg-black w-screen gap-8">
         <h1 className="font-[600] text-[20px] md:text-[40px]">
@@ -130,11 +146,11 @@ const DataScience = () => {
         </div>
       </section>
       <GradWorkIn />
-      <EnrollToday price="300,000"/>
+      <EnrollToday price="500,000"/>
       <Testimonial testimonials={testimonials} name="What clients say" />
       <Footer />
     </div>
   );
 };
 
-export default DataScience;
+export default DataEngineering;

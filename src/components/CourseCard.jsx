@@ -25,7 +25,6 @@ CourseCard.propTypes ={
     courseTitle: propType.string.isRequired,
     description: propType.string.isRequired,
     path: propType.string.isRequired,
-    element: propType.string.isRequired,
 }
 
 export default CourseCard

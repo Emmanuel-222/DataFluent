@@ -1,24 +1,15 @@
 import { useState } from "react";
 
+import propType from "prop-types"
+
 import { IoChevronForward } from "react-icons/io5";
 
-const Accordion = () => {
+const Accordion = ({ data }) => {
   const [activeIndex, setActiveIndex] = useState(0); // Track the active section
 
   const toggleSection = (index) => {
     setActiveIndex(activeIndex === index ? null : index); // Toggle section
   };
-
-  const data = [
-    { title: "Introduction to Data Science", content: "Gain a foundational understanding of data science, its importance, and how it drives decision-making in various industries. Learn key concepts, tools, and data lifecycle." },
-    { title: "Data Analysis with Excel", content: "This is the content of Section 2." },
-    { title: "Advance Excel for Data Analysis", content: "This is the content of Section 1." },
-    { title: "Data Manipulation with SQL", content: "This is the content of Section 2." },
-    { title: "Advanced SQL", content: "This is the content of Section 1." },
-    { title: "Python Basics", content: "This is the content of Section 2." },
-    { title: "Intermediate Pendas and Machine Learning", content: "This is the content of Section 1." },
-    { title: "Capsone Project", content: "This is the content of Section 2." },
-  ];
 
   return (
     <div className="accordion flex flex-col gap-4 justify-center w-[95%] md:w-[70%] mt-10 mb-40">
@@ -35,31 +26,14 @@ const Accordion = () => {
             </div>
           )}
         </div>
-      ))}
+      ))
+      }
     </div>
   );
 };
 
-
-// .accordion-item {
-//     margin: 10px 0;
-//   }
-  
-//   .accordion-header {
-//     background-color: #f1f1f1;
-//     border: none;
-//     padding: 10px;
-//     width: 100%;
-//     text-align: left;
-//     cursor: pointer;
-//     font-size: 16px;
-//   }
-  
-//   .accordion-content {
-//     background-color: #fff;
-//     padding: 10px;
-//     border: 1px solid #ccc;
-//     margin-top: -1px;
-//   }
+Accordion.propTypes = {
+  data: propType.array.isRequired,
+};
   
 export default Accordion;

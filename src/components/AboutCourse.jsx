@@ -1,32 +1,37 @@
+import propType from "prop-types"
+
+
 import { IoIosCheckmarkCircle } from "react-icons/io";
 
-import dataScience from "../../src/assets/about-course/datascience.png";
 
-const AboutCourse = () => {
+
+const AboutCourse = ({ paragraph, item1, item2, item3, img }) => {
   return (
     <div className="my-28 flex justify-center flex-wrap items-stretch mx-10 gap-12">
       <div className="max-w-[40rem] flex flex-col gap-8 md:gap-4">
         <h1 className="font-[600] text-xl md:text-4xl">What This Course Covers</h1>
         <p className="text-sm md:text-base">
-          This course is designed to provide a comprehensive introduction to
-          Data Science, equipping you with the practical skills and knowledge
-          needed to analyze and interpret complex data. From understanding
-          foundational concepts to applying tools like Python, SQL, and Excel,
-          you’ll gain hands-on experience through real-world projects. Whether
-          you’re starting a new career or advancing in your current role, this
-          course prepares you to thrive in today’s data-driven world.{" "}
+          {paragraph}
         </p>
         <ul className="flex justify-center flex-col gap-4 text-sm md:text-base">
-          <li className="flex items-center gap-1"><IoIosCheckmarkCircle className="text-[#20E4D1] text-xl"/>Learn the fundamentals of data science.</li>
-          <li className="flex items-center gap-1"><IoIosCheckmarkCircle className="text-[#20E4D1] text-xl"/>Master tools like Python, SQL, and Excel.</li>
-          <li className="flex items-center gap-1"><IoIosCheckmarkCircle className="text-[#20E4D1] text-xl"/>Work on real-world projects with expert guidance.</li>
+          <li className="flex items-center gap-1"><IoIosCheckmarkCircle className="text-[#20E4D1] text-xl"/>{item1}</li>
+          <li className="flex items-center gap-1"><IoIosCheckmarkCircle className="text-[#20E4D1] text-xl"/>{item2}</li>
+          <li className="flex items-center gap-1"><IoIosCheckmarkCircle className="text-[#20E4D1] text-xl"/>{item3}</li>
         </ul>
       </div>
       <div className="">
-        <img className="size-[28rem] object-cover" src={dataScience} alt="PhotoForDataScience" />
+        <img className="size-[28rem] object-cover" src={img} alt="PhotoForDataScience" />
       </div>
     </div>
   );
+};
+
+AboutCourse.propTypes = {
+  img: propType.string.isRequired,
+  paragraph: propType.string.isRequired,
+  item1: propType.string.isRequired,
+  item2: propType.string.isRequired,
+  item3: propType.string.isRequired,
 };
 
 export default AboutCourse;
