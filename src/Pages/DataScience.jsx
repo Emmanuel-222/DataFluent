@@ -5,6 +5,7 @@ import {
   MainContent,
   AboutCourse,
   Accordion,
+  GradientBackground,
 } from "../components";
 import NextCohort from "../components/NextCohort";
 
@@ -69,6 +70,7 @@ const DataScience = () => {
   return (
     <div className="container text-[#FAFAFA] h-screen w-screen bg-black">
       <section className="flex items-center flex-col bg-black w-screen">
+        <GradientBackground />
         <MainContent
           title={"Data Science"}
           paragraph="Master data analysis, visualization, and machine learning to uncover
