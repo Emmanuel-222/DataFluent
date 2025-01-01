@@ -5,6 +5,7 @@ import {
   MainContent,
   AboutCourse,
   Accordion,
+  GradientBackground,
 } from "../components";
 import NextCohort from "../components/NextCohort";
 
@@ -90,6 +91,7 @@ const DataEngineering = () => {
   return (
     <div className="container text-[#FAFAFA] h-screen w-screen bg-black">
       <section className="flex items-center flex-col bg-black w-screen">
+        <GradientBackground />
         <MainContent
           title={"Data Engineering"}
           paragraph="Learn to build and optimize data pipelines, ensuring reliable and efficient data flow for analytics"
