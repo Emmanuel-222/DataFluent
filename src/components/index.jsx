@@ -1,3 +1,4 @@
+// Navbar Pages
 export { default as Navbar } from "./Navbar";
 export { default as Home } from "../Pages/Home";
 export { default as About } from "../Pages/About";
@@ -5,6 +6,7 @@ export { default as Contact } from "../Pages/Contact";
 export { default as Academy } from "../Pages/Academy";
 export { default as Services } from "../Pages/Services";
 export { default as Projects } from "../Pages/Projects";
+// Academy Pages
 export { default as ScrollToTop } from "../components/ScrollToTop";
 export { default as DataScience } from "../Pages/DataScience";
 export { default as DataEngineering } from "../Pages/DataEngineering";
@@ -17,6 +19,8 @@ export { default as ArtificialIntel } from "../Pages/ArtificialIntel";
 export { default as ProjectMang } from "../Pages/ProjectMang";
 export { default as DigitalMarket } from "../Pages/DigitalMarket";
 export { default as Devops } from "../Pages/Devops";
+export { default as Enroll } from "../Pages/Enroll";
+// Components import 
 export { default as Footer } from "./Footer";
 export { default as Card } from "./Card";
 export { default as Carousel} from "./Carousel";
@@ -32,3 +36,5 @@ export { default as MainContent } from "./MainContent";
 export { default as AboutCourse } from "./AboutCourse";
 export { default as Accordion } from "./Accordion";
 export { default as GradientBackground } from "./GradientBackground";
+export { default as MultiStateForm }  from "./MutilFormState";
+export { default as Input }  from "./Input";
