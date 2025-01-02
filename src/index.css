@@ -3,14 +3,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body, html {
+body,
+html {
   scroll-behavior: smooth;
-    height: 100%;
-    overflow: auto;
+  height: 100%;
+  overflow: auto;
 }
 
-
-.app{
+.app {
   font-family: "Inter", sans-serif;
 }
 
@@ -20,94 +20,93 @@ body, html {
   flex-direction: column;
   align-items: center;
   background: #000;
-  background-image: url('./assets/shadow.png');
+  background-image: url("./assets/shadow.png");
   background-size: cover;
   background-position: center;
   color: white;
 }
 
-.about-card{
+.about-card {
   background-position: center;
   background-size: cover;
-  background-image: url('./assets/about-us/about.png');
+  background-image: url("./assets/about-us/about.png");
 }
 
-.about-background{
-  background-image: url('./assets/About-us.png');
+.about-background {
+  background-image: url("./assets/About-us.png");
 }
 
-.academy-background{
+.academy-background {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #000;
-  background-image: url('./assets/academy/academy-bg.png');
+  background-image: url("./assets/academy/academy-bg.png");
   background-size: cover;
   background-position: center;
   color: white;
 }
 
-.contact-background{
+.contact-background {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #000;
-  background-image: url('./assets/Contact/Hero-section-rectangle.png');
+  background-image: url("./assets/Contact/Hero-section-rectangle.png");
   background-size: cover;
   background-position: center;
   color: white;
 }
 
-.form-bg{
-  background-image: url('./assets/Contact/form-bg.png');
+.form-bg {
+  background-image: url("./assets/Contact/form-bg.png");
   background-size: cover;
   background-position: center;
 }
 
-.our-services-bg{
-  background-image: url('./assets/Ellipse_57_Services.png');
+.our-services-bg {
+  background-image: url("./assets/Ellipse_57_Services.png");
   background-size: cover;
   background-position: center;
 }
 
-.enroll-to-shadow{
-  -webkit-box-shadow: 10px 10px 23px -4px #1A1A1A66;
-  -moz-box-shadow: 10px 10px 23px -4px #1A1A1A66;
-  box-shadow: 10px 10px 23px -4px #1A1A1A66;
+.enroll-to-shadow {
+  -webkit-box-shadow: 10px 10px 23px -4px #1a1a1a66;
+  -moz-box-shadow: 10px 10px 23px -4px #1a1a1a66;
+  box-shadow: 10px 10px 23px -4px #1a1a1a66;
 }
-.card-border{
+.card-border {
   border: 1px solid;
   border-top-color: #1a1a1a;
-  border-bottom-color: #43E8D833;
+  border-bottom-color: #43e8d833;
   border-left-color: #1a1a1a;
-  border-right-color: #43E8D833;
+  border-right-color: #43e8d833;
 }
 
-.btn{
+.btn {
   padding: 1rem;
   text-align: center;
   font-weight: 500;
   border-radius: 2rem;
-  border: 1px solid #20E4D1;
+  border: 1px solid #20e4d1;
   cursor: pointer;
 }
 
-
-.shadow{
-  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+.shadow {
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
 }
 
-.ellispe{
-  background: url('./assets/Ellipse1.png');
+.ellispe {
+  background: url("./assets/Ellipse1.png");
 }
 
-.flex-wraps{
+.flex-wraps {
   display: flex;
   flex-wrap: wrap;
 }
-.cards-container{
+.cards-container {
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -116,78 +115,78 @@ body, html {
   gap: 1rem;
 }
 
-.active{
- color: #20E4D1;
+.active {
+  color: #20e4d1;
 }
 
-.card{
-  flex: 1 1 calc(33.33% - 1rem); 
+.card {
+  flex: 1 1 calc(33.33% - 1rem);
   max-width: calc(33.33% - 1rem);
 }
 
-.bg1{
-  background: url('./assets/card/bg-card1.png');
+.bg1 {
+  background: url("./assets/card/bg-card1.png");
   background-repeat: no-repeat;
   background-size: 10rem;
   background-position-x: 85%;
   background-position-y: 30%;
 }
 
-.bg2{
-  background: url('./assets/card/bg-card2.png');
+.bg2 {
+  background: url("./assets/card/bg-card2.png");
   background-repeat: no-repeat;
   background-size: 10rem;
   background-position-x: 85%;
   background-position-y: 30%;
 }
-.bg3{
-  background: url('./assets/card/bg-card3.png');
+.bg3 {
+  background: url("./assets/card/bg-card3.png");
   background-repeat: no-repeat;
   background-size: 10rem;
   background-position-x: 85%;
   background-position-y: 30%;
 }
-.bg4{
-  background: url('./assets/card/bg-card4.png');
+.bg4 {
+  background: url("./assets/card/bg-card4.png");
   background-repeat: no-repeat;
   background-size: 10rem;
   background-position-x: 85%;
   background-position-y: 30%;
 }
-.bg5{
-  background: url('./assets/card/bg-card5.png');
-  background-repeat: no-repeat;
-  background-size: 10rem;
-  background-position-x: 85%;
-  background-position-y: 30%;
-}
-
-.bg6{
-  background: url('./assets/card/bg-card6.png');
+.bg5 {
+  background: url("./assets/card/bg-card5.png");
   background-repeat: no-repeat;
   background-size: 10rem;
   background-position-x: 85%;
   background-position-y: 30%;
 }
 
-.left-quote-bg{
-  background: url('./assets/card/left-quote.png');
+.bg6 {
+  background: url("./assets/card/bg-card6.png");
+  background-repeat: no-repeat;
+  background-size: 10rem;
+  background-position-x: 85%;
+  background-position-y: 30%;
+}
+
+.left-quote-bg {
+  background: url("./assets/card/left-quote.png");
   background-repeat: no-repeat;
   background-size: 8rem;
   background-position-x: 10%;
   background-position-y: 50%;
 }
-.left-bg{
-  background: url('./assets/left.png');
+.left-bg {
+  background: url("./assets/left.png");
   background-repeat: no-repeat;
 }
-.right-bg{
-  background: url('./assets/right.png');
+.right-bg {
+  background: url("./assets/right.png");
   background-repeat: no-repeat;
 }
 
 .custom-button {
-  background-color: #43E8D8; /* Custom green color */
+  background-color: #43e8d8; /* Custom green color */
   color: #000;
   border: none;
   border-radius: 5px;
@@ -196,50 +195,105 @@ body, html {
   cursor: pointer;
 }
 
+.form-box {
+  display: flex;
+  padding: 20px;
+  width: clamp(80%, 5%, 100%);
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.form-box .input-box {
+  width: 100%;
+  height: 50px;
+  margin: 25px 0;
+  position: relative;
+}
+.form-box .container {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: solid 1px #747474;
+  border-radius: 16px;
+  padding: 0 1rem;
+}
+
+.input-box label {
+  font-size: 1rem;
+  position: absolute;
+  top: 0.75rem;
+  left: 1rem;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+  border: solid 1px #fafafa;
+  font-size: 1.25rem;
+  margin-top: 0.25rem;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: 0.1rem;
+  font-size: 0.75rem;
+}
 
 @media (max-width: 1000px) {
-  .left-quote-bg{
+  .left-quote-bg {
     background-size: 6rem;
     background-position-x: 10%;
     background-position-y: 10%;
   }
-  .btn{
+  .btn {
     width: 100%;
+  }
+  .form-box {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+  .form-box .container {
+    flex-wrap: wrap;
+    gap: 0.25rem;
   }
 }
 
 @media (max-width: 1200px) {
-  .cards-container{
+  .cards-container {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .card{
-    flex: 1 1 100%; 
+  .card {
+    flex: 1 1 100%;
     max-width: 100%;
   }
-  }
+}
 
-  @media (max-width: 1110px) {
-    .full-width{
-      width: 100%;
-    }
+@media (max-width: 1110px) {
+  .full-width {
+    width: 100%;
   }
+}
 @media (max-width: 1300px) {
-  .graduate{
+  .graduate {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
 
-  .graduate div{
+  .graduate div {
     width: 100%;
   }
 
-  .graduate div img{
+  .graduate div img {
     position: relative;
   }
 }
-
-

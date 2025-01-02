@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import propType from "prop-types";
 
 import { TbCurrencyNaira } from "react-icons/tb";
@@ -22,9 +23,9 @@ const EnrollToday = ({ price }) => {
           <li>Recorded Session after the Class</li>
           <li>Industry-recognized Certificate</li>
         </ul>
-        <button className="btn w-full text-[#20E4D1] mt-8">
-          Enroll Now
-        </button>
+        <Link to={"/enroll"}>
+          <button className="btn w-full text-[#20E4D1] mt-8">Enroll Now</button>
+        </Link>
       </div>
     </div>
   );
@@ -32,6 +33,6 @@ const EnrollToday = ({ price }) => {
 
 EnrollToday.propTypes = {
   price: propType.string.isRequired,
-}
+};
 
 export default EnrollToday;

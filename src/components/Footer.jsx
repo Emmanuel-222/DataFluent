@@ -62,10 +62,12 @@ const Footer = () => {
             <h1 className="text-[#B9B9B9] font-[600] text-[18px] lg:text-[24px] lg:text-wrap">
               Invest in Your Future with DataFluent Academy
             </h1>
-            <p className="text-[#20E4D1] text-sm flex justify-center items-center cursor-pointer">
-              Enroll now
-              <GoArrowUpRight />
-            </p>
+            <Link to={"/enroll"}>
+              <p className="text-[#20E4D1] text-sm flex justify-center items-center cursor-pointer">
+                Enroll now
+                <GoArrowUpRight />
+              </p>
+            </Link>
           </div>
           <div>
             <img src={graduationCap} alt="graduation cap" />

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import propType from "prop-types";
 
 import firstImg from "../../src/assets/main-content/Fireworks Half.png";
@@ -14,12 +15,12 @@ const MainContent = ({ img, title, paragraph, size }) => {
             <img className="size-20" src={secondImg} alt="secondPhoto" />
           </div>
           <h1 className={`text-3xl md:text-[${size}] font-[700]`}>{title}</h1>
-          <p className="text-wrap text-[#fafafa] mt-6">
-            {paragraph}
-          </p>
-          <button className="btn w-full md:w-48 bg-[#20E4D1] text-[#121212] mt-8">
-            Enroll Now
-          </button>
+          <p className="text-wrap text-[#fafafa] mt-6">{paragraph}</p>
+          <Link to={"/enroll"}>
+            <button className="btn w-full md:w-48 bg-[#20E4D1] text-[#121212] mt-8">
+              Enroll Now
+            </button>
+          </Link>
         </div>
         <div>
           <img
@@ -44,12 +45,12 @@ const MainContent = ({ img, title, paragraph, size }) => {
             <img className="size-20" src={secondImg} alt="secondPhoto" />
           </div>
           <h1 className="text-3xl md:text-[72px] font-[700]">{title}</h1>
-          <p className="text-wrap text-[#fafafa]">
-            {paragraph}
-          </p>
-          <button className="btn w-full md:w-48 bg-[#20E4D1] text-[#121212] mt-8">
-            Enroll Now
-          </button>
+          <p className="text-wrap text-[#fafafa]">{paragraph}</p>
+          <Link to={"/enroll"}>
+            <button className="btn w-full md:w-48 bg-[#20E4D1] text-[#121212] mt-8">
+              Enroll Now
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,7 +1,16 @@
+import { Link } from "react-router-dom";
+
 import { LuGraduationCap } from "react-icons/lu";
 import { GoArrowUpRight } from "react-icons/go";
 
-import { AcademyCard, CourseCard, Testimonial, Footer, CourseCardInfo, Impact } from "../components";
+import {
+  AcademyCard,
+  CourseCard,
+  Testimonial,
+  Footer,
+  CourseCardInfo,
+  Impact,
+} from "../components";
 
 import imageOne from "../../src/assets/academy/image-one.png";
 import imageTwo from "../../src/assets/academy/image-two.png";
@@ -10,8 +19,6 @@ import imageFour from "../../src/assets/academy/image-four.png";
 import imageFive from "../../src/assets/academy/image-five.png";
 import profileOne from "../../src/assets/academy/profile-one.png";
 import profileTwo from "../../src/assets/academy/profile-two.png";
-
-
 
 const Academy = () => {
   const testimonail = [
@@ -52,9 +59,11 @@ const Academy = () => {
               <button className="btn bg-[#20E4D1] text-[#000] w-full md:w-60">
                 Explore Courses
               </button>
-              <button className="btn bg-black text-[#20E4D1] w-full md:w-60">
-                Enroll Now
-              </button>
+              <Link to={"/enroll"}>
+                <button className="btn bg-black text-[#20E4D1] w-full md:w-60">
+                  Enroll Now
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -106,9 +115,15 @@ const Academy = () => {
         </h1>
         <div className="flex flex-wrap justify-center items-stretch gap-14 mx-4 md:mx-24 my-8">
           {
-          //Destructed information from the CourseCardInfo to make the code neater
+            //Destructed information from the CourseCardInfo to make the code neater
             CourseCardInfo.map(({ courseTitle, description, img, path }) => (
-              <CourseCard key={courseTitle} courseTitle={courseTitle} description={description} img={img} path={path} />
+              <CourseCard
+                key={courseTitle}
+                courseTitle={courseTitle}
+                description={description}
+                img={img}
+                path={path}
+              />
             ))
           }
           <div className="flex flex-1 flex-col rounded-[32px] justify-start items-start px-1 pt-1 pb-8 gap-4">
