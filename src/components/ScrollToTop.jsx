@@ -1,23 +1,15 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-const ScrollToTop = () => {
-  const { pathname, hash } = useLocation();
+const ScrollToTop = (props) => {
+    const location = useLocation();
+    useEffect(() => {
+      window.scrollTo({top: 0, left: 0, behavior: 'smooth' });
+    }, [location]);
 
-  useEffect(() => {
-    if (hash) {
-      // Scroll to hash target if present
-      const element = document.querySelector(hash);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-        return; // Exit early to prevent scrolling to top
-      }
-    }
-    // Otherwise, scroll to the top of the page
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [pathname, hash]);
-
-  return null; // This component does not render anything
-};
+    return <>
+        {props.children}
+    </>
+  };
 
 export default ScrollToTop;

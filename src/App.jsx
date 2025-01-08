@@ -20,16 +20,14 @@ import {
   Devops,
   Enroll,
 } from "./components";
-import Layout from "./components/Layout";
 import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
     <div className="h-screen w-full overflow-x-hidden app">
       <Router>
-        <ScrollToTop />
-        <Layout>
-          <Navbar />
+        <Navbar />
+        <ScrollToTop>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about-us" element={<About />} />
@@ -50,7 +48,7 @@ const App = () => {
             <Route path="/course/devops" element={<Devops />} />
             <Route path="/enroll" element={<Enroll />} />
           </Routes>
-        </Layout>
+        </ScrollToTop>
       </Router>
     </div>
   );
