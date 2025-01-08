@@ -10,6 +10,7 @@ const Input = ({ type, name, value, onChange, input}) => {
         onChange={onChange}
         className="bg-gray-800 border border-[#747474] rounded px-3 py-2 text-white peer placeholder-transparent focus:outline-none focus:border-[#FAFAFA] w-full"
         placeholder="Input field 1"
+        required
       />
       <label
         htmlFor="inputValue1"

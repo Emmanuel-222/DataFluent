@@ -48,7 +48,6 @@ const Home = () => {
                   Explore Our Services
                 </button>
               </Link>
-
               <button className="btn bg-black text-[#20E4D1] w-full md:w-60">
                 Learn with Us
               </button>

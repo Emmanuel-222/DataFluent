@@ -38,3 +38,4 @@ export { default as Accordion } from "./Accordion";
 export { default as GradientBackground } from "./GradientBackground";
 export { default as MultiStateForm }  from "./MutilFormState";
 export { default as Input }  from "./Input";
+export { default as RadioButton }  from "./RadioButton";
