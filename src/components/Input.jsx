@@ -1,6 +1,6 @@
 import propType from "prop-types";
 
-const Input = ({ type, name, value, onChange, input}) => {
+const Input = ({ type, name, value, onChange, input }) => {
   return (
     <div className="relative w-full">
       <input
@@ -19,18 +19,19 @@ const Input = ({ type, name, value, onChange, input}) => {
                        peer-placeholder-shown:text-[#ADADAD] peer-focus:-top-0.5 
                        peer-focus:text-sm peer-focus:text-[#FAFAFA] bg-transparent px-1"
       >
-        {input}<span className="text-center peer-focus:bg-[#FB3748]">*</span>
+        {input}
+        <span className="text-center peer-focus:bg-[#FB3748]">*</span>
       </label>
     </div>
   );
 };
 
 Input.propTypes = {
-    type: propType.string.isRequired,
-    name: propType.string.isRequired,
-    value: propType.string.isRequired,
-    onChange: propType.func.isRequired,
-    input: propType.string.isRequired,
-}
+  type: propType.string.isRequired,
+  name: propType.string.isRequired,
+  value: propType.string.isRequired,
+  onChange: propType.func.isRequired,
+  input: propType.string.isRequired,
+};
 
 export default Input;
