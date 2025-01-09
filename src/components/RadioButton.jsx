@@ -1,21 +1,19 @@
 import propType from "prop-types";
 
-const RadioButton = ({ data }) => {
-    return (
-      <>
-        {data.map((item, index) => (
-          <label key={index} className="radio-button">
-            <input type="radio" name="option" value={item} />
-            <div className="radio-circle"></div>
-            <span className="radio-label">{item}</span>
-          </label>
-        ))}
-      </>
-    );
-  };
+const RadioButton = ({ item }) => {
+  return (
+    <>
+      <label className="radio-button">
+        <input type="radio" name="option" value={item} />
+        <div className="radio-circle"></div>
+        <span className="font-[400] text-xl">{item}</span>
+      </label>
+    </>
+  );
+};
 
 RadioButton.propTypes = {
-  data: propType.array.isRequired,
-};
+    item: propType.string.isRequired,
+}
 
 export default RadioButton;
