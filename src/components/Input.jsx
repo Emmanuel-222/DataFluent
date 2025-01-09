@@ -1,19 +1,16 @@
 import propType from "prop-types";
 
-const Input = ({ type, name, value, onChange, input }) => {
-  return (
+const Input = ({ type, input, register, name, required }) => {
+   return (
     <div className="relative w-full">
       <input
         type={type}
-        name={name}
-        value={value}
-        onChange={onChange}
-        className="bg-gray-800 border border-[#747474] rounded px-3 py-2 text-white peer placeholder-transparent focus:outline-none focus:border-[#FAFAFA] w-full"
+        {...register(name, { required: required ? `This is required!` : undefined })}
+        className="bg-transparent border border-[#747474] rounded-lg px-3 py-2 text-white peer placeholder-transparent focus:outline-none focus:border-[#FAFAFA] w-full"
         placeholder="Input field 1"
-        required
       />
       <label
-        htmlFor="inputValue1"
+        htmlFor={name}
         className="absolute left-3 -top-0.5 text-sm transition-all 
                        peer-placeholder-shown:text-base peer-placeholder-shown:top-2 
                        peer-placeholder-shown:text-[#ADADAD] peer-focus:-top-0.5 
@@ -28,10 +25,9 @@ const Input = ({ type, name, value, onChange, input }) => {
 
 Input.propTypes = {
   type: propType.string.isRequired,
-  name: propType.string.isRequired,
-  value: propType.string.isRequired,
-  onChange: propType.func.isRequired,
   input: propType.string.isRequired,
+  name: propType.string.isRequired,
+  required: propType.bool.isRequired,
 };
 
 export default Input;
