@@ -195,7 +195,6 @@ html {
   cursor: pointer;
 }
 
-
 .radio-button {
   display: flex;
   align-items: center;
@@ -244,7 +243,15 @@ html {
   font-weight: 400;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 
 @media (max-width: 1000px) {
   .left-quote-bg {
