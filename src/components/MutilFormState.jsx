@@ -112,21 +112,21 @@ const MultiStateForm = () => {
           </h3>
           <div className="flex text-white flex-wrap sm:gap-6 md:gap-8 lg:gap-16 justify-between">
             <div className="space-y-4">
-              <RadioButton item="Data Science" option="course" />
-              <RadioButton item="DevOps" option="course" />
-              <RadioButton item="Data Analysis" option="course" />
-              <RadioButton item="Cyber Security" option="course" />
+              <RadioButton register={register} required={true} item="Data Science" name="course" error={errors.course} />
+              <RadioButton register={register} required={true} item="DevOps" name="course" error={errors.course} />
+              <RadioButton register={register} required={true} item="Data Analysis" name="course" error={errors.course} />
+              <RadioButton register={register} required={true} item="Cyber Security" name="course" error={errors.course} />
             </div>
             <div className="space-y-4">
-              <RadioButton item="Software Development" option="course" />
-              <RadioButton item="Artificial Intelligence" option="course" />
-              <RadioButton item="Digital Marketing" option="course" />
-              <RadioButton item="Project Management" option="course" />
+              <RadioButton item="Software Development" name="course" register={register} required={true} error={errors.course} />
+              <RadioButton item="Artificial Intelligence" name="course" register={register} required={true} error={errors.course} />
+              <RadioButton item="Digital Marketing" name="course" register={register} required={true} error={errors.course} />
+              <RadioButton item="Project Management" name="course" register={register} required={true} error={errors.course} />
             </div>
             <div className="space-y-4">
-              <RadioButton item="Data Administration" option="course" />
-              <RadioButton item="Data Engineering" option="course" />
-              <RadioButton item="Mobile Development" option="course" />
+              <RadioButton register={register} required={true} error={errors.course} item="Data Administration" name="course" />
+              <RadioButton register={register} required={true} error={errors.course} item="Data Engineering" name="course" />
+              <RadioButton register={register} required={true} error={errors.course} item="Mobile Development" name="course" />
             </div>
           </div>
         </div>
@@ -137,18 +137,18 @@ const MultiStateForm = () => {
           </h3>
           <div className="flex text-white flex-wrap sm:gap-6 md:gap-8 lg:gap-16 justify-between">
             <div className="space-y-4">
-              <RadioButton item="Student" option="status" />
-              <RadioButton item="Freelancer" option="status" />
-              <RadioButton item="Unemployed" option="status" />
+              <RadioButton item="Student" register={register} required={true} error={errors.status} name="status" />
+              <RadioButton item="Freelancer" register={register} required={true} error={errors.status} name="status" />
+              <RadioButton item="Unemployed" register={register} required={true} error={errors.status} name="status" />
             </div>
             <div className="space-y-4">
-              <RadioButton item="Employed (Tech role)" option="status" />
-              <RadioButton item="Employed (Non Tech role)" option="status" />
-              <RadioButton item="Changing career" option="status" />
+              <RadioButton item="Employed (Tech role)" register={register} required={true} error={errors.status} name="status" />
+              <RadioButton item="Employed (Non Tech role)" register={register} required={true} error={errors.status} name="status" />
+              <RadioButton item="Changing career" register={register} required={true} error={errors.status} name="status" />
             </div>
             <div className="space-y-4">
-              <RadioButton item="Business Owner" option="status" />
-              <RadioButton item="Other" option="status" />
+              <RadioButton item="Business Owner" register={register} required={true} error={errors.status} name="status" />
+              <RadioButton item="Other" register={register} required={true} error={errors.status} name="status" />
             </div>
           </div>
         </div>
@@ -158,8 +158,8 @@ const MultiStateForm = () => {
           </h3>
           <div className="flex text-white flex-wrap sm:gap-6 md:gap-8 lg:gap-16 justify-between">
             <div className="space-y-4">
-              <RadioButton item="Weekdays" option="schedule" />
-              <RadioButton item="Weekends" option="schedule" />
+              <RadioButton register={register} required={true} error={errors.schedule} item="Weekdays" name="schedule" />
+              <RadioButton register={register} required={true} error={errors.schedule} item="Weekends" name="schedule" />
             </div>
           </div>
         </div>
@@ -169,8 +169,8 @@ const MultiStateForm = () => {
           </h3>
           <div className="flex text-white flex-wrap sm:gap-6 md:gap-8 lg:gap-16 justify-between">
             <div className="space-y-4">
-              <RadioButton item="Physical" option="mode" />
-              <RadioButton item="Online" option="mode" />
+              <RadioButton register={register} required={true} error={errors.mode} item="Physical" name="mode" />
+              <RadioButton register={register} required={true} error={errors.mode} item="Online" name="mode" />
             </div>
           </div>
         </div>
@@ -180,17 +180,17 @@ const MultiStateForm = () => {
           </h3>
           <div className="flex text-white flex-wrap sm:gap-6 md:gap-8 lg:gap-16 justify-between">
             <div className="space-y-4">
-              <RadioButton item="Facbook" option="via" />
-              <RadioButton item="Instagram" option="via" />
-              <RadioButton item="Google" option="via" />
+              <RadioButton register={register} required={true} error={errors.via} item="Facbook" name="via" />
+              <RadioButton register={register} required={true} error={errors.via} item="Instagram" name="via" />
+              <RadioButton register={register} required={true} error={errors.via} item="Google" name="via" />
             </div>
             <div className="space-y-4">
-              <RadioButton item="X (Twitter)" option="via" />
-              <RadioButton item="Linkedin" option="via" />
-              <RadioButton item="Friend/ Family" option="via" />
+              <RadioButton register={register} required={true} error={errors.via} item="X (Twitter)" name="via" />
+              <RadioButton register={register} required={true} error={errors.via} item="Linkedin" name="via" />
+              <RadioButton register={register} required={true} error={errors.via} item="Friend/ Family" name="via" />
             </div>
             <div className="space-y-4">
-              <RadioButton item="Others" option="via" />
+              <RadioButton register={register} required={true} error={errors.via} item="Others" name="via" />
             </div>
           </div>
           <button
