@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { Footer, Testimonial, Card } from "../components";
 
 import ServiceCard from "../components/ServiceCard";
-import Carousel from "../components/Carousel";
+// import Carousel from "../components/Carousel";
 
 import profileOne from "../../src/assets/card/image1.png";
 import profileTwo from "../../src/assets/card/image2.png";
@@ -86,11 +86,12 @@ const Services = () => {
             Our Recent Projects
           </h1>
         </div>
-        <div className="flex flex-col md:gap-8 items-stretch justify-end mb-32">
-          <div className="top flex flex-row cards-container">
-            <img className="h-72 w-72" src={imageOne} alt="" />
-            <img className="h-72 w-72" src={imageTwo} alt="" />
-            <img className="h-72 w-72" src={imageThree} alt="" />
+        <div className="flex flex-col md:gap-8 items-stretch justify-end mb-32 border-solid border-green-500 border-2">
+          <div className="top flex flex-nowrap items-stretch justify-center m-4 gap-4 border-2 border-solid border-red-600 overflow-x-auto">
+            {/* Cards */}
+            <img className="h-80 w-80" src={imageOne} alt="" />
+            <img className="h-80 w-80" src={imageTwo} alt="" />
+            <img className="h-80 w-80" src={imageThree} alt="" />
           </div>
 
           {/* Mobile screen */}
@@ -120,7 +121,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <Carousel />
+        {/* <Carousel /> */}
       </section>
       <Testimonial testimonials={testimonail} />
       <Card
