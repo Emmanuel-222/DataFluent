@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { PiHandWavingThin } from "react-icons/pi";
-import { Footer, Card, Carousel, Testimonial, Impact } from "../components";
+import { Footer, Card, Testimonial, Impact } from "../components";
 
 import profileOne from "../../src/assets/card/image1.png";
 import profileTwo from "../../src/assets/card/image2.png";
@@ -54,7 +54,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <Carousel />
+        {/* <Carousel /> */}
       </section>
       <section className="about-background flex items-center py-64 justify-center flex-col bg-black w-screen">
         <div className="shadow flex items-center justify-center flex-col border-[1px] border-solid border-[#2F2F2F99] px-2 md:px-16 py-14 bg-transparent rounded-[32px] blur-[0.5px] mx-2">
